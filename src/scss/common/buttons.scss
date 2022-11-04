@@ -1,0 +1,42 @@
+.button {
+	font-family: $ff;
+	font-weight: $fw-medium;
+	font-size: 16px;
+	padding: 8px 40px;
+	border: 0;
+	border-radius: 5px;
+	color: $accent;
+	background: $white;
+	box-shadow: 2px 1px 3px whitesmoke;
+	cursor: pointer;
+	transition: ease $tr;
+	font-size: 20px;
+
+	&:hover {
+		color: $white;
+		background: $accent;
+
+	}
+
+	&.header-button {
+		animation: cycle 4s linear infinite;
+		background: $accent;
+		color: $white;
+
+		&:hover {
+			color: $white;
+			background: $span;
+		}
+
+		@keyframes cycle {
+			35% {transform: rotate(0) translate(0, 0);}
+			40% {transform: rotate(3deg) translate(0, -2px);}
+			45% {transform: rotate(-1deg) translate(0, -2px);}
+			50% {transform: rotate(3deg) translate(0, -2px);}
+			55% {transform: rotate(-1deg) translate(0, -2px);}
+			60% {transform: rotate(3deg) translate(0, -2px);}
+			65% {transform: rotate(-1deg) translate(0, -2px);}
+			70% {transform: rotate(0) translate(0, 0);}
+		}
+	}
+}
