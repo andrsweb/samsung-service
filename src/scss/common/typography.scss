@@ -11,10 +11,15 @@ h6, .h6 {
 }
 
 h1, .h1 {
+	font-family: $ff;
+	font-weight: $fw-bold;
+	line-height: $lh-title;
 	font-size: 32px;
+	margin-bottom: 40px;
+	text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.281);
 
 	@media all and (min-width: $lg) {
-		font-size: 36px
+		font-size: 40px
 	}
 }
 
@@ -22,7 +27,6 @@ h2, .h2 {
 	font-size: 24px;
 
 	@media all and (min-width: $lg) {
-		font-size: 36px
 	}
 }
 
@@ -34,7 +38,6 @@ h4, .h4 {
 	font-size: $fs-xl;
 
 	@media all and (min-width: $lg) {
-		font-size: 24px
 	}
 }
 

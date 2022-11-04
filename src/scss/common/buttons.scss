@@ -7,7 +7,6 @@
 	border-radius: 5px;
 	color: $accent;
 	background: $white;
-	box-shadow: 2px 1px 3px whitesmoke;
 	cursor: pointer;
 	transition: ease $tr;
 	font-size: 20px;
@@ -38,5 +37,22 @@
 			65% {transform: rotate(-1deg) translate(0, -2px);}
 			70% {transform: rotate(0) translate(0, 0);}
 		}
+	}
+}
+
+.form-button {
+	padding: 8px 20px;
+	background: $white;
+	border: 0;
+	border-radius: 5px;
+	color: $accent;
+	font-family: $ff;
+	font-weight: $fw-medium;
+	font-size: 15px;
+	cursor: pointer;
+	transition: opacity ease $tr;
+
+	&:hover {
+		opacity: $op;
 	}
 }
