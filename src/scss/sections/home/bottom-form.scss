@@ -1,0 +1,29 @@
+.bottom-form {
+    padding: 50px 0;
+    background: $wild-blue;
+
+    .hero-form-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .hero-form {
+        width: 50%;
+    }
+
+    .form-privacy {
+        width: 50%;
+        margin: 0;
+    }
+
+    .form-privacy-link {
+        color: $accent;
+    }
+
+    .form-phone {
+        &:focus {
+            background: rgb(178, 203, 245);
+        }
+    }
+}
