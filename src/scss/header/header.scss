@@ -1,5 +1,5 @@
 .header {
-	padding: 14px 0;
+	padding: 16px 0;
 	background: $white;
 	position: fixed;
 	top: 0;
@@ -10,7 +10,7 @@
 				padding ease $tr;
 
 	&.scrolled {
-		box-shadow: 2px 2px 3px 1px #fafeffda;
+		box-shadow: 1px 1px 2px 1px #fafeffda;
 		padding: 10px 0;
 	}
 
