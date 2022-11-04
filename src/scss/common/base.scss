@@ -23,7 +23,8 @@ body {
 
 img {
 	max-width: 100%;
-	height: auto
+	height: auto;
+	display: block;
 }
 
 ul {
@@ -39,6 +40,7 @@ ul {
 	width: 100%;
 	min-height: 100vh;
 	overflow: hidden;
+	padding-top: 60px;
 
 	.footer {
 		margin-top: auto
