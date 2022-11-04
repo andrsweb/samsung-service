@@ -38,22 +38,12 @@ h2, .h2 {
 }
 
 h3, .h3 {
-	font-size: 30px
-}
-
-h4, .h4 {
-	font-size: $fs-xl;
-
-	@media all and (min-width: $lg) {
-	}
-}
-
-h5, .h5 {
-	font-size: $fs-xl
-}
-
-h6, .h6 {
-	font-size: $fs-lg
+	font-size: 22px;
+	text-align: center;
+	font-family: $ff;
+	font-weight: $fw-bold;
+	margin-bottom: 70px;
+	text-transform: uppercase;
 }
 
 a {
