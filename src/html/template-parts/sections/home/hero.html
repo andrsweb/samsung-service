@@ -1,1 +1,36 @@
-<section class="hero"></section>
+<section class="hero">
+	<div class="container">
+		<div class="hero-running-stroke">
+			<span class="hero-running-text">
+				служба поддержки работает круглосуточно и без выходных
+			</span>
+		</div>
+		<div class="hero-wrapper">
+			<div class="hero-info">
+				<h1>
+					Сервисный центр Samsung
+				</h1>
+				<ul class="hero-info-list">
+					<li class="hero-info-item">
+						Выезд мастера на дом за 45 минут
+					</li>
+					<li class="hero-info-item">
+						Ремонт на дому и в сервисном центре
+					</li>
+					<li class="hero-info-item">
+						Выезд по Москве и МО
+					</li>
+					<li class="hero-info-item">
+						Гарантия от 1 года
+					</li>
+				</ul>
+				@@loop( 'hero-form.html', [
+					{ "text": "Заказать ремонт" }
+				])
+			</div>
+			<div class="hero-img">
+				<img src="img/hero/tech.png" width="800" height="1200" alt="">
+			</div>
+		</div>
+	</div>
+</section>
