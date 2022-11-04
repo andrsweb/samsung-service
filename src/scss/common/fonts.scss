@@ -1,52 +1,65 @@
 @font-face {
-    font-family: 'FormularW03';
-    src: url('../fonts/FormularW03-Bold.eot');
-    src: url('../fonts/FormularW03-Bold.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/FormularW03-Bold.woff2') format('woff2'),
-        url('../fonts/FormularW03-Bold.woff') format('woff'),
-        url('../fonts/FormularW03-Bold.ttf') format('truetype'),
-        url('../fonts/FormularW03-Bold.svg#FormularW03-Bold') format('svg');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Geometria';
-    src: url('../fonts/Geometria-Thin.eot');
-    src: url('../fonts/Geometria-Thin.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Geometria-Thin.woff2') format('woff2'),
-        url('../fonts/Geometria-Thin.woff') format('woff'),
-        url('../fonts/Geometria-Thin.ttf') format('truetype'),
-        url('../fonts/Geometria-Thin.svg#Geometria-Thin') format('svg');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Geometria';
-    src: url('../fonts/Geometria-Medium.eot');
-    src: url('../fonts/Geometria-Medium.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Geometria-Medium.woff2') format('woff2'),
-        url('../fonts/Geometria-Medium.woff') format('woff'),
-        url('../fonts/Geometria-Medium.ttf') format('truetype'),
-        url('../fonts/Geometria-Medium.svg#Geometria-Medium') format('svg');
+    font-family: 'Formular';
+    src: url('fonts/formular/Formular-Medium.eot');
+    src: url('fonts/formular/Formular-Medium.eot?#iefix') format('embedded-opentype'),
+        url('fonts/formular/Formular-Medium.woff2') format('woff2'),
+        url('fonts/formular/Formular-Medium.woff') format('woff'),
+        url('fonts/formular/Formular-Medium.ttf') format('truetype'),
+        url('fonts/formular/Formular-Medium.svg#Formular-Medium') format('svg');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Geometria';
-    src: url('../fonts/Geometria-Bold.eot');
-    src: url('../fonts/Geometria-Bold.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Geometria-Bold.woff2') format('woff2'),
-        url('../fonts/Geometria-Bold.woff') format('woff'),
-        url('../fonts/Geometria-Bold.ttf') format('truetype'),
-        url('../fonts/Geometria-Bold.svg#Geometria-Bold') format('svg');
+    font-family: 'Formular';
+    src: url('fonts/formular/Formular-Bold.eot');
+    src: url('fonts/formular/Formular-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/formular/Formular-Bold.woff2') format('woff2'),
+        url('fonts/formular/Formular-Bold.woff') format('woff'),
+        url('fonts/formular/Formular-Bold.ttf') format('truetype'),
+        url('fonts/formular/Formular-Bold.svg#Formular-Bold') format('svg');
     font-weight: bold;
     font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Formular';
+    src: url('fonts/formular/Formular-Light.eot');
+    src: url('fonts/formular/Formular-Light.eot?#iefix') format('embedded-opentype'),
+        url('fonts/formular/Formular-Light.woff2') format('woff2'),
+        url('fonts/formular/Formular-Light.woff') format('woff'),
+        url('fonts/formular/Formular-Light.ttf') format('truetype'),
+        url('fonts/formular/Formular-Light.svg#Formular-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Formular';
+    src: url('fonts/formular/Formular.eot');
+    src: url('fonts/formular/Formular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/formular/Formular.woff2') format('woff2'),
+        url('fonts/formular/Formular.woff') format('woff'),
+        url('fonts/formular/Formular.ttf') format('truetype'),
+        url('fonts/formular/Formular.svg#Formular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Formular';
+    src: url('fonts/formular/Formular-LightItalic.eot');
+    src: url('fonts/formular/Formular-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/formular/Formular-LightItalic.woff2') format('woff2'),
+        url('fonts/formular/Formular-LightItalic.woff') format('woff'),
+        url('fonts/formular/Formular-LightItalic.ttf') format('truetype'),
+        url('fonts/formular/Formular-LightItalic.svg#Formular-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
     font-display: swap;
 }
 
