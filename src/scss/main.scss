@@ -15,6 +15,7 @@
 @import 'footer/footer';
 
 // Home page sections styles.
+@import 'sections/breadcrumbs';
 @import 'sections/home/hero';
 @import 'sections/home/hero-form';
 @import 'sections/home/advantages';
@@ -23,4 +24,7 @@
 @import 'sections/home/certification';
 @import 'sections/home/info';
 @import 'sections/home/bottom-form';
+
+// Price styles
+@import 'sections/price/price-on'
 

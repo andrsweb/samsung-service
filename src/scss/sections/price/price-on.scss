@@ -1,0 +1,39 @@
+.price-on {
+    padding: 50px 0 0;
+    background: $corn-blue;
+
+    @media all and (min-width: $md) {
+        padding: 100px 0 0;
+    }
+
+    .container {
+        max-width: 1200px;
+    }
+
+    &-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        @media all and (min-width: $md) {
+            flex-direction: row;
+        }
+    }
+
+    &-bg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            @media all and (min-width: $m) {
+                max-width: 80%;
+            }
+
+            @media all and (min-width: $m) {
+                max-width: 100%;
+            }
+        }
+    }
+}
