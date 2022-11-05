@@ -1,5 +1,5 @@
 .header {
-	padding: 16px 0;
+	padding: 8px 0;
 	background: $white;
 	position: fixed;
 	top: 0;
@@ -9,13 +9,31 @@
 	transition: box-shadow ease $tr,
 				padding ease $tr;
 
+	@media all and (min-width: $md) {
+		padding: 16px;
+	}
+
 	&.scrolled {
-		box-shadow: 1px 1px 4px 1px #dbdfdfef;
-		padding: 10px 0;
+		box-shadow: 1px 1px 6px 1px #f3ececef;
+		padding: 4px 0;
+
+		@media all and (min-width: $md) {
+			padding: 12px;
+		}
 	}
 
 	.container {
 		max-width: 1200px;
+	}
+
+	.header-ui {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		@media all and (min-width: $md) {
+			display: none;
+		}
 	}
 
 	&-wrapper {
@@ -24,37 +42,159 @@
 		align-items: center;
 	}
 
+	&-box {
+		@media all and (min-width: $md) {
+			display: flex;
+		}
+	}
+
+	.header-inner {
+		opacity: 0;
+
+		@media all and (min-width: $md) {
+			opacity: 1;
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+		}
+
+		&.opened {
+			padding: 100px 0 40px;
+			opacity: 1;
+			transition: opacity ease 1s;
+			overflow-y: auto;
+			position: fixed;
+			top: 68px;
+			left: 0;
+			background: $white;
+			width: 100%;
+			height: calc( 100vh - 68px );
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			align-items: center;
+
+			.header-menu-text {
+				display: flex;
+				justify-content: center;
+				width: 100%;
+				margin-bottom: 20px;
+				text-align: center;
+			}
+
+			.header-button-wrapper {
+				width: 100%;
+				display: flex;
+				justify-content: center;
+				order: 2;
+
+				@media all and (min-width: $md) {
+					order: 1;
+				}
+			}
+
+			.header-menu {
+				width: 100%;
+				display: flex;
+				flex-direction: column;
+				order: 1;
+				align-items: center;
+				margin-bottom: 20px;
+
+				@media all and (min-width: $md) {
+					width: 100%;
+					order: 2;
+				}
+			}
+
+			.header-menu-item {
+				margin: 0 0 10px 0;
+			}
+
+			.header-phone {
+				display: flex;
+				flex-direction: column;
+				width: 100%;
+				padding: 0;
+				margin-bottom: 20px;
+
+				img {
+					margin: 0;
+				}
+			}
+		}
+	}
+
 	&-logo {
 		display: flex;
-		justify-content: center;
+		justify-content: space-between;
 		align-items: center;
 		cursor: pointer;
-		width: 10%;
+		width: auto;
+		position: relative;
+		z-index: 10;
+
+		@media all and (min-width: $md) {
+			width: 100%;
+			justify-content: flex-start;
+		}
+	}
+
+	&-logo-md {
+		display: none;
+		@media all and (min-width: $md) {
+			display: flex;
+			justify-content: flex-start;
+			width: 10%;
+			cursor: pointer;
+		}
 	}
 
 	&-menu-text {
-		width: 45%;
-		display: flex;
+		display: none;
 		justify-content: flex-end;
 		align-items: center;
 		font-family: $ff;
 		font-weight: $fw-bold;
 		font-size: 20px;
 		color: $span;
+
+		@media all and (min-width: $md) {
+			display: flex;
+			width: 40%;
+			font-size: 12px;
+			justify-content: center;
+		}
+
+		@media all and (min-width: $lg) {
+			font-size: 15px;
+		}
+
+		@media all and (min-width: $xl) {
+			font-size: 20px;
+		}
 	}
 
 	&-button-wrapper {
-		width: 20%;
-		display: flex;
+		display: none;
 		justify-content: flex-end;
 		align-items: center;
+
+		@media all and (min-width: $md) {
+			display: flex;
+			width: 30%;
+		}
 	}
 
 	&-menu {
+		display: none;
 		margin-top: 10px;
-		display: flex;
 		justify-content: center;
 		width: 100%;
+
+		@media all and (min-width: $md) {
+			display: flex;
+		}
 	}
 
 	&-menu-item {
@@ -68,16 +208,26 @@
 		margin-right: 30px;
 		text-transform: uppercase;
 
+		@media all and (min-width: $md) {
+			font-size: 12px;
+			margin-right: 15px;
+		}
+
+		@media all and (min-width: $lg) {
+			font-size: 15px;
+		}
+
+		@media all and (min-width: $xl) {
+			margin-right: 30px;
+		}
+
 		&:last-child {
 			margin-right: 0;
 		}
 	}
 
-
-
 	&-phone {
-		width: 25%;
-		display: flex;
+		display: none;
 		align-items: center;
 		justify-content: flex-end;
 		font-family: $ff;
@@ -86,8 +236,32 @@
 		color: $accent;
 		padding-right: 20px;
 
+		@media all and (min-width: $md) {
+			display: flex;
+			font-size: 12px;
+			width: 20%;
+			padding-right: 0;
+		}
+
+		@media all and (min-width: $lg) {
+			font-size: 19px;
+		}
+
+		@media all and (min-width: $xl) {
+			font-size: 24px;
+		}
+
 		img {
 			margin-right: 10px;
+
+			@media all and (min-width: $md) {
+				max-width: 70%;
+				margin-right: 0;
+			}
+
+			@media all and (min-width: $xl) {
+				max-width: 100%;
+			}
 		}
 	}
 }

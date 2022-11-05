@@ -26,6 +26,10 @@
         cursor: pointer;
         transition: scale ease $tr;
 
+        &-img.medium-zoom-image {
+            cursor: pointer;
+        }
+
         &:hover {
             scale: 1.02;
         }
@@ -38,7 +42,6 @@
     &-img {
         border-radius: 5px;
         box-shadow:0 0 15px 2px rgb(8, 10, 14);
-        cursor: default;
     }
 
     .lupa {
