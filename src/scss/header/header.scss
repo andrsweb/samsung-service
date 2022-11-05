@@ -210,11 +210,12 @@
 
 		@media all and (min-width: $md) {
 			font-size: 12px;
-			margin-right: 15px;
+			margin-right: 8px;
 		}
 
 		@media all and (min-width: $lg) {
 			font-size: 15px;
+			margin-right: 20px;
 		}
 
 		@media all and (min-width: $xl) {

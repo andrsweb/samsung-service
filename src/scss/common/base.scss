@@ -43,6 +43,10 @@ p {
 	margin: 0;
 }
 
+picture {
+	display: contents;
+}
+
 .wrapper {
 	position: relative;
 	display: flex;
