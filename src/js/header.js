@@ -35,6 +35,7 @@ const toggleBurger = () => {
     setTargetElement( document.querySelector( '#body-lock' ) )
 
     burgerButton.addEventListener( 'click', () => {
+        if( ! burgerButton && ! headerInner ) return
 
         if( ! headerInner.classList.contains( 'opened') ) {
             headerInner.classList.add( 'opened' )
@@ -45,7 +46,20 @@ const toggleBurger = () => {
             burgerButton.classList.remove( 'opened' )
             enableBodyScroll( getTargetElement() )
         }
+
+        window.addEventListener( 'resize', () => {
+            const windowWidth = window.innerWidth
+            const WINDOW_WIDTH_MD = 767
+
+            if( windowWidth >= WINDOW_WIDTH_MD ) {
+                headerInner.classList.remove( 'opened' )
+                burgerButton.classList.remove( 'opened' )
+                enableBodyScroll( getTargetElement() )
+            }
+        } )
     } )
 }
+
+
 
 

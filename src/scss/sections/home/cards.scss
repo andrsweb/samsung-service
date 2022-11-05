@@ -26,7 +26,8 @@
             color: $black;
             cursor: pointer;
             border-radius: 20px;
-            transition: height ease 1s;
+            transition: height ease 1s,
+                        opacity ease 1s;
             position: relative;
 
             &:hover .card-desc {
