@@ -14,7 +14,16 @@
 
     &-item {
         padding: 0 -20px;
-        width: calc( 100% / 3 );
+        width: calc( 100% / 1 );
+        margin-bottom: 40px;
+
+        @media all and (min-width: $sm) {
+            width: calc( 100% / 2 );
+        }
+
+        @media all and (min-width: $lg) {
+            width: calc( 100% / 3 );
+        }
     }
 
     &-inner {
@@ -38,13 +47,22 @@
     &-title {
         font-family: $ff;
         font-weight: $fw-bold;
-        font-size: 20px;
+        font-size: 15px;
         margin-bottom: 30px;
+
+        @media all and (min-width: $lg) {
+            font-size: 18px;
+        }
     }
 
     &-text {
         font-family: $ff;
         font-weight: $fw-regular;
-        font-size: 15px;
+        font-size: 12px;
+        min-height: 50px;
+
+        @media all and (min-width: $lg) {
+            font-size: 15px;
+        }
     }
 }
