@@ -6,82 +6,39 @@
         max-width: 1200px;
     }
 
-    &-grid {
+    &-wrapp {
         display: flex;
         margin-bottom: 50px;
-    }
-
-    .grid-wrapper {
-        width: 70%;
-    }
-
-    .row-title {
-        display: flex;
-        margin-bottom: 50px;
-    }
-
-    .col-name {
-        display: flex;
-        justify-content: flex-start;
-        font-family: $ff;
-        font-weight: $fw-bold;
-        font-size: 18px;
-        color: $white;
-
-        &:first-child {
-            width: 33.333%;
-        }
-
-        &:nth-child(2) {
-            width: 33.333%;
-        }
-
-        &:last-child {
-            width: 33.333%;
-        }
-    }
-
-    .row  {
-        display: flex;
-    }
-
-    .col {
-        font-family: $ff;
-        font-weight: $fw-medium;
-        color: $white;
-        font-size: 15px;
-        margin-bottom: 10px;
-        padding-right: 40px;
-
-        a {
-            color: $plat;
-        }
-
-        &:first-child {
-            width: 33.333%;
-        }
-
-        &:nth-child(2) {
-            width: 33.333%;
-        }
-
-        &:last-child {
-            width: 33.333%;
-        }
+        flex-wrap: wrap;
     }
 
     &-contacts {
-        width: 30%;
+        width: 100%;
         display: flex;
         flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+
+        @media all and (min-width: $m) {
+            width: 50%;
+        }
+
+        @media all and (min-width: $lg) {
+            // align-items: flex-end;
+        }
     }
 
     &-title {
         font-family: $ff;
         font-weight: $fw-bold;
         color: $white;
-        margin-bottom: 50px;
-        font-size: 18px;
+        margin-bottom: 20px;
+        font-size: 14px;
+
+        @media all and (min-width: $lg) {
+            margin-bottom: 50px;
+            font-size: 18px;
+        }
     }
 
     &-text {
@@ -94,9 +51,18 @@
     }
 
     &-schedule {
-        font-size: 20px;
+        font-size: 15px;
         margin-bottom: 25px;
         color: $plat;
+        text-align: center;
+
+        @media all and (min-width: $m) {
+            margin-bottom: 50px;
+        }
+
+        @media all and (min-width: $lg) {
+            font-size: 20px;
+        }
     }
 
     &-address {
@@ -116,13 +82,20 @@
 
     &-info {
         display: flex;
+        flex-direction: column;
         align-items: center;
     }
 
     &-privacy {
-        width: 50%;
-        font-size: 15px;
+        width: 100%;
+        font-size: 10px;
         color: $white;
+        text-align: center;
+        margin-bottom: 20px;
+
+        @media all and (min-width: $lg) {
+            font-size: 15px;
+        }
     }
 
     .privacy-link {
@@ -131,8 +104,9 @@
     }
 
     &-pay {
-        width: 50%;
+        width: 100%;
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: flex-end;
     }
@@ -141,7 +115,7 @@
         font-family: $ff;
         font-weight: $fw-bold;
         color: $plat;
-        margin-right: 20px;
+        margin-bottom: 20px;
     }
 
     &-pay-items {
@@ -159,29 +133,23 @@
         width: calc( 100% / 4);
     }
 
-    .rate-link {
-        opacity: 0;
-        transition: opacity ease $tr;
+    .header-menu {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
 
-        &:hover {
-            opacity: 1;
-        }
-
-        &.scrolled {
-            opacity: 1;
+        @media all and (min-width: $m) {
+            width: 50%;
         }
     }
 
-    .fixed-rate {
-        display: block;
-        position: fixed;
-        bottom: 30px;
-        right: 0;
-        cursor: pointer;
-        transition: scale ease $tr;
+    .header-menu-item {
+        color: $white;
+        margin: 0 0 20px 0;
 
-        &:hover {
-            scale: 1.1;
+        @media all and (min-width: $m) {
+            font-size: 15px;
         }
     }
 }
