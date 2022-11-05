@@ -1,0 +1,158 @@
+.footer {
+    padding: 50px 0;
+    background: $corn-blue;
+
+    .container {
+        max-width: 1200px;
+    }
+
+    &-grid {
+        display: flex;
+        margin-bottom: 50px;
+    }
+
+    .grid-wrapper {
+        width: 70%;
+    }
+
+    .row-title {
+        display: flex;
+        margin-bottom: 50px;
+    }
+
+    .col-name {
+        display: flex;
+        justify-content: flex-start;
+        font-family: $ff;
+        font-weight: $fw-bold;
+        font-size: 18px;
+        color: $white;
+
+        &:first-child {
+            width: 33.333%;
+        }
+
+        &:nth-child(2) {
+            width: 33.333%;
+        }
+
+        &:last-child {
+            width: 33.333%;
+        }
+    }
+
+    .row  {
+        display: flex;
+    }
+
+    .col {
+        font-family: $ff;
+        font-weight: $fw-medium;
+        color: $white;
+        font-size: 15px;
+        margin-bottom: 10px;
+        padding-right: 40px;
+
+        a {
+            color: $accent;
+        }
+
+        &:first-child {
+            width: 33.333%;
+        }
+
+        &:nth-child(2) {
+            width: 33.333%;
+        }
+
+        &:last-child {
+            width: 33.333%;
+        }
+    }
+
+    &-contacts {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &-title {
+        font-family: $ff;
+        font-weight: $fw-bold;
+        color: $white;
+        margin-bottom: 50px;
+        font-size: 18px;
+    }
+
+    &-text {
+        font-family: $ff;
+        font-weight: $fw-medium;
+        color: $white;
+        font-size: 15px;
+        color: $accent;
+        margin-bottom: 30px;
+    }
+
+    &-schedule {
+        font-size: 20px;
+        margin-bottom: 25px;
+    }
+
+    &-address {
+        font-family: $ff;
+        font-weight: $fw-bold;
+        font-size: 18px;
+        color: $white;
+    }
+
+    &-num {
+        font-family: $ff;
+        font-weight: $fw-bold;
+        font-size: 25px;
+        margin-bottom: 30px;
+        color: $white;
+    }
+
+    &-info {
+        display: flex;
+        align-items: center;
+    }
+
+    &-privacy {
+        width: 50%;
+        font-size: 15px;
+    }
+
+    .privacy-link {
+        color: $white;
+    }
+
+    &-pay {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    &-pay-title {
+        font-family: $ff;
+        font-weight: $fw-bold;
+        color: $accent;
+        margin-right: 20px;
+    }
+
+    &-pay-items {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin: 0 -10px;
+    }
+
+    &-pay-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 10px;
+        width: calc( 100% / 4);
+    }
+}
