@@ -1,7 +1,6 @@
 .button {
 	font-family: $ff;
 	font-weight: $fw-medium;
-	font-size: 16px;
 	padding: 8px 40px;
 	border: 0;
 	border-radius: 5px;
@@ -9,7 +8,7 @@
 	background: $white;
 	cursor: pointer;
 	transition: ease $tr;
-	font-size: 20px;
+	font-size: 19px;
 
 	&:hover {
 		color: $white;
