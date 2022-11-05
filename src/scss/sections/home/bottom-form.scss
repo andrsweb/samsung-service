@@ -4,17 +4,32 @@
 
     .hero-form-wrapper {
         display: flex;
+        flex-direction: column;
         flex-wrap: wrap;
         align-items: center;
+
+        @media all and (min-width: $lg) {
+            flex-direction: row;
+        }
     }
 
     .hero-form {
-        width: 50%;
+        width: 100%;
+        margin-bottom: 20px;
+
+        @media all and (min-width: $lg) {
+            width: 50%;
+            margin-bottom: 0;
+        }
     }
 
     .form-privacy {
-        width: 50%;
+        width: 100%;
         margin: 0;
+
+        @media all and (min-width: $lg) {
+            width: 50%;
+        }
     }
 
     .form-privacy-link {

@@ -12,14 +12,36 @@
 	&-text {
 		font-family: $ff;
 		font-weight: $fw-regular;
-		font-size: 20px;
+		font-size: 12px;
 		margin-bottom: 20px;
+		text-align: center;
+
+		@media all and (min-width: $md) {
+			font-size: 15px;
+		}
+
+		@media all and (min-width: $xl) {
+			font-size: 20px;
+		}
+	}
+
+	&-subtitle {
+		font-size: 12px;
+		text-align: center;
+
+		@media all and (min-width: $md) {
+			font-size: 15px;
+		}
 	}
 
 	&-list {
 		margin-bottom: 30px;
-		font-size: 20px;
+		font-size: 15px;
 		font-weight: $fw-bold;
+
+		@media all and (min-width: $xl) {
+			font-size: 20px;
+		}
 	}
 
 	&-list.middle {
@@ -44,8 +66,12 @@
 		margin-top: 30px;
 		font-family: $ff;
 		font-weight: $fw-regular;
-		font-size: 15px;
-		padding-left: 50px;
+		font-size: 12px;
+		padding-left: 30px;
+
+		@media all and (min-width: $md) {
+			font-size: 15px;
+		}
 
 		&::before {
 			content: "";
@@ -54,8 +80,8 @@
 			top: 50%;
 			transform: translateY( -50% );
 			display: block;
-			width: 20px;
-			height: 20px;
+			width: 10px;
+			height: 10px;
 			background: $accent;
 		}
 	}

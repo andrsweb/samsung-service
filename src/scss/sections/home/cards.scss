@@ -13,10 +13,18 @@
     }
 
     .card {
-        width: calc( 100% / 4 );
+        width: calc( 100% / 1 ); //4
         display: flex;
         height: 0;
         overflow: hidden;
+
+        @media all and (min-width: $sm) {
+            width: calc( 100% / 2 );
+        }
+
+        @media all and (min-width: $md) {
+            width: calc( 100% / 4 );
+        }
 
         &.visible {
             height: auto;
@@ -26,7 +34,8 @@
             color: $black;
             cursor: pointer;
             border-radius: 20px;
-            transition: height ease 1s;
+            transition: height ease 1s,
+                        opacity ease 1s;
             position: relative;
 
             &:hover .card-desc {
@@ -61,9 +70,13 @@
         display: flex;
         font-family: $ff;
         font-weight: $fw-medium;
-        font-size: 20px;
+        font-size: 15px;
         margin-bottom: 30px;
         text-align: center;
+
+        @media all and (min-width: $xl) {
+            font-size: 20px;
+        }
     }
 
     .card-img {
@@ -88,7 +101,11 @@
         bottom: 30px;
         right: 50%;
         transform: translate( 50% );
-        font-size: 14px;
+        font-size: 10px;
+
+        @media all and (min-width: $xl) {
+            font-size: 14px;
+        }
     }
 
     .button.cards-button {

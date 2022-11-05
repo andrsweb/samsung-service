@@ -18,50 +18,37 @@
 </head>
 <body>
 	<div class="wrapper">
-		<header class="header">
-			<div class="container">
-				<div class="header-wrapper">
-					<a class="header-logo">
-						<img src="img/header/logo.png" width="120" height="120" alt="">
-					</a>
-					<div class="header-menu-text">
-						Работаем без выходных и праздников
+		<header class="header" id="body-lock">
+			<div class="header-wrapper">
+				<div class="container">
+					<div class="header-box">
+						<div class="header-ui">
+							<a class="header-logo">
+								<img src="img/header/logo.png" width="120" height="120" alt="">
+							</a>
+							<div class="burger-button">
+								<span></span>
+							</div>
+						</div>
+						<div class="header-inner">
+							<a class="header-logo-md">
+								<img src="img/header/logo.png" width="120" height="120" alt="">
+							</a>
+							<div class="header-menu-text">
+								Работаем без выходных и праздников
+							</div>
+							<a class="header-phone" href="tel:495-147-08-11" >
+								<img class="header-phone-img" src="img/header/Phone.png" width="40" height="40" alt="">
+									495-147-08-11
+							</a>
+							<div class="header-button-wrapper">
+								<button class="button header-button">
+									Сделать заказ
+								</button>
+							</div>
+							@@include( 'nav.html' )
+						</div>
 					</div>
-					<a class="header-phone" href="tel:495-147-08-11" >
-						<img class="header-phone-img" src="img/header/Phone.png" width="40" height="40" alt="">
-							495-147-08-11
-					</a>
-					<div class="header-button-wrapper">
-						<button class="button header-button">
-							Сделать заказ
-						</button>
-					</div>
-					<nav class="header-menu">
-						<a class="header-menu-item">
-								Цены
-						</a>
-						<a class="header-menu-item">
-								Отзывы
-						</a>
-						<a class="header-menu-item">
-								Диагностика
-						</a>
-						<a class="header-menu-item">
-								Гарантия
-						</a>
-						<a class="header-menu-item">
-								Выезд и доставка
-						</a>
-						<a class="header-menu-item">
-								Сроки
-						</a>
-						<a class="header-menu-item">
-								Запчасти
-						</a>
-						<a class="header-menu-item">
-								Контакты
-						</a>
-					</nav>
 				</div>
 			</div>
 		</header>
