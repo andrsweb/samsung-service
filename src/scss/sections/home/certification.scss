@@ -14,6 +14,10 @@
         display: flex;
         flex-wrap: wrap;
         margin: 0 -10px;
+
+        @media all and (min-width: $md) {
+			margin: 0 -20px;
+		}
     }
 
     &-item {
@@ -34,6 +38,7 @@
         @media all and (min-width: $md) {
             width: calc( 100% / 4 );
             margin-bottom: 0;
+            padding: 0 20px;
         }
 
         &-img.medium-zoom-image {
