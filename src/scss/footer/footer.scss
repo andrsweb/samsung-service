@@ -158,4 +158,30 @@
         padding: 0 10px;
         width: calc( 100% / 4);
     }
+
+    .rate-link {
+        opacity: 0;
+        transition: opacity ease $tr;
+
+        &:hover {
+            opacity: 1;
+        }
+
+        &.scrolled {
+            opacity: 1;
+        }
+    }
+
+    .fixed-rate {
+        display: block;
+        position: fixed;
+        bottom: 30px;
+        right: 0;
+        cursor: pointer;
+        transition: scale ease $tr;
+
+        &:hover {
+            scale: 1.1;
+        }
+    }
 }
