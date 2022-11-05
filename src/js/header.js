@@ -15,9 +15,9 @@ window.addEventListener('scroll', () => {
         if ( ! header.classList.contains( 'scrolled' ) )
             header.classList.add( 'scrolled' )
 
-    }   else {
+}   else {
         if ( header.classList.contains( 'scrolled' ) )
-            header.classList.remove( 'scrolled' )
+        header.classList.remove( 'scrolled' )
     }
 })
 
@@ -28,6 +28,7 @@ const toggleBurger = () => {
 
     burgerButton.addEventListener( 'click', () => {
         if( ! burgerButton && ! headerInner ) return
+        console.log( 'клик')
 
         if( ! headerInner.classList.contains( 'opened') ) {
             headerInner.classList.add( 'opened' )
