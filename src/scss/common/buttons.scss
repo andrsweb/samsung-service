@@ -18,12 +18,12 @@
 
 	&.header-button {
 		animation: cycle 4s linear infinite;
-		background: $accent;
+		background: $corn-blue;
 		color: $white;
 
 		&:hover {
 			color: $white;
-			background: $span;
+			background: $blue;
 		}
 
 		@keyframes cycle {
@@ -49,9 +49,11 @@
 	font-weight: $fw-medium;
 	font-size: 15px;
 	cursor: pointer;
-	transition: opacity ease $tr;
+	transition: background ease $tr,
+					color ease $tr;
 
 	&:hover {
-		opacity: $op;
+		background: $blue;
+		color: $white;
 	}
 }

@@ -1,6 +1,6 @@
 .bottom-form {
     padding: 50px 0;
-    background: $wild-blue;
+    background: $corn-blue;
 
     .hero-form-wrapper {
         display: flex;
@@ -18,12 +18,12 @@
     }
 
     .form-privacy-link {
-        color: $accent;
+        color: $plat;
     }
 
     .form-phone {
         &:focus {
-            background: rgb(178, 203, 245);
+            background: $plat;
         }
     }
 }

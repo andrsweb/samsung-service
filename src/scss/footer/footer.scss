@@ -1,6 +1,6 @@
 .footer {
     padding: 50px 0;
-    background: $corn-blue;
+    background: #061A40;
 
     .container {
         max-width: 1200px;
@@ -54,7 +54,7 @@
         padding-right: 40px;
 
         a {
-            color: $accent;
+            color: $plat;
         }
 
         &:first-child {
@@ -89,13 +89,14 @@
         font-weight: $fw-medium;
         color: $white;
         font-size: 15px;
-        color: $accent;
+        color: $plat;
         margin-bottom: 30px;
     }
 
     &-schedule {
         font-size: 20px;
         margin-bottom: 25px;
+        color: $plat;
     }
 
     &-address {
@@ -121,10 +122,12 @@
     &-privacy {
         width: 50%;
         font-size: 15px;
+        color: $white;
     }
 
     .privacy-link {
-        color: $white;
+        color: $plat;
+        font-weight: $fw-bold;
     }
 
     &-pay {
@@ -137,7 +140,7 @@
     &-pay-title {
         font-family: $ff;
         font-weight: $fw-bold;
-        color: $accent;
+        color: $plat;
         margin-right: 20px;
     }
 
