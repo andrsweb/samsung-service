@@ -13,6 +13,7 @@
 		font-family: $ff;
 		font-weight: $fw-regular;
 		font-size: 20px;
+		margin-bottom: 20px;
 	}
 
 	&-list {
@@ -21,12 +22,29 @@
 		font-weight: $fw-bold;
 	}
 
+	&-list.middle {
+		display: flex;
+	}
+
+	&-list-wrapp {
+		display: flex;
+		flex-direction: column;
+
+		&:first-child {
+			width: 50%;
+		}
+
+		&:last-child {
+			width: 50%;
+		}
+	}
+
 	&-item {
 		position: relative;
 		margin-top: 30px;
 		font-family: $ff;
 		font-weight: $fw-regular;
-		font-size: 20px;
+		font-size: 15px;
 		padding-left: 50px;
 
 		&::before {

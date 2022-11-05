@@ -44,5 +44,8 @@
   },
   "browserslist": [
     "last 3 versions"
-  ]
+  ],
+  "dependencies": {
+    "medium-zoom": "^1.0.6"
+  }
 }

@@ -20,7 +20,7 @@
         font-size: 15px;
 
         &:focus {
-            background: rgb(176, 209, 247);
+            background: $plat;
         }
 
         &::placeholder {
@@ -38,7 +38,7 @@
     font-family: $ff;
     font-weight: $fw-light;
     font-size: 14px;
-    color: $black;
+    color: $plat;
 }
 
 .form-privacy-link {
