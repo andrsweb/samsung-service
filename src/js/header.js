@@ -17,6 +17,9 @@ document.addEventListener( 'DOMContentLoaded', () => {
 
         if( scrollTop > 1000 ) {
             rate.classList.add( 'scrolled' )
+        } else {
+            if( scrollTop < 400 )
+            rate.classList.remove( 'scrolled' )
         }
     })
 } )
