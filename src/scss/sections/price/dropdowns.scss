@@ -190,6 +190,10 @@
             font-size: 20px;
         }
 
+        @media all and (min-width: $xl) {
+            font-size: 30px;
+        }
+
         img {
             margin-right: 10px;
         }
