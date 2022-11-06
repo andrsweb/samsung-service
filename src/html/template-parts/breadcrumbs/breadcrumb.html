@@ -1,5 +1,13 @@
 <nav class="breadcrumb">
-    @@loop( 'breadcrumb-item.html', [
-        {"name": "Цены на услуги"}
-    ] )
+    <div class="breadcrumb-inner">
+        <a href="/" class="breadcrumb-main">
+            Главная
+        </a>
+        <span class="slash">
+            /
+        </span>
+        <div class="breadcrumb-current">
+            @@name
+        </div>
+    </div>
 </nav>
