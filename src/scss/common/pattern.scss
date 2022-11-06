@@ -1,25 +1,217 @@
-.pattern {
-    .container {
-        max-width: 1200px;
-    }
+	.pattern-info {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
 
-    &-info {}
+	.pattern-text {
+		width: 50%;
+		font-weight: $fw-medium;
+		font-size: 25px;
+		color: $accent;
+	}
 
-    &-text {}
+	.pattern-img {
+		width: 50%;
+	}
 
-    &-img {}
+	.pattern-allert {
+		padding: 50px 0;
+		background: rgb(197, 8, 8);
+	}
 
-    &-allert {}
+	.pattern-information {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
 
-    &-information {}
+		h3 {
+			color: $plat;
+			font-size: 30px;
+		}
+	}
 
-    &-grid {}
+	.pattern-grid {
+		padding: 50px 0;
+		background: $plat;
+	}
 
-    &-cols {}
+	.pattern-cols {
+		display: flex;
+		flex-wrap: wrap;
+	}
 
-    &-col-left {}
+	.pattern-col-left {
+		display: flex;
+		flex-direction: column;
+		width: 70%;
+		padding: 40px;
 
-    &-col-right {}
+		p {
+			color: $accent;
+			font-size: 30px;
+			text-align: center;
+			margin-bottom: 50px;
+		}
+	}
 
-    &-col-img {}
-}
+	.pattern-col-right {
+		width: 30%;
+
+		.sidebar {
+			width: 100%;
+			background: $corn-blue;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			width: 100%;
+			max-height: 800px;
+			padding: 30px 10px;
+			border-radius: 20px;
+			margin-top: 70px;
+
+			@media all and (min-width: $lg) {
+				margin: 0;
+			}
+		}
+
+		.sidebar-title {
+			margin-bottom: 20px;
+			color: $white;
+		}
+
+		.sidebar-phone-text {
+			font-size: 14px;
+			text-align: center;
+			margin-bottom: 100px;
+			color: $white;
+
+			@media all and (min-width: $m) {
+				font-size: 16px
+			}
+
+			@media all and (min-width: $md) {
+				margin-bottom: 50px;
+			}
+		}
+
+		.sidebar-text {
+			font-size: 15px;
+			text-align: center;
+			color: $white;
+
+			@media all and (min-width: $m) {
+				font-size: 20px
+			}
+		}
+
+		.header-phone {
+			display: flex;
+			justify-content: center;
+			width: 100%;
+			margin-bottom: 40px;
+			color: $white;
+
+			@media all and (min-width: $md) {
+				font-size: 20px;
+			}
+
+			@media all and (min-width: $xl) {
+				font-size: 30px;
+			}
+
+			img {
+				margin-right: 10px;
+			}
+		}
+
+		.bottom-form {
+			padding: 0;
+			background: transparent;
+
+			.form-privacy {
+				text-align: center;
+				font-size: 12px;
+				width: 100%;
+				margin-top: 10px;
+			}
+
+			.hero-form {
+				@media all and (min-width: $lg) {
+					width: 100%;
+				}
+
+				fieldset {
+					flex-direction: column;
+					width: 100%;
+				}
+
+				.form-button {
+					margin-top: 20px;
+				}
+
+				.form-phone {
+					margin-right: 0;
+				}
+			}
+
+			.hero-form-wrapper {
+				display: flex;
+				flex-direction: column;
+
+				@media all and (min-width: $lg) {
+					flex-direction: row;
+				}
+			}
+		}
+	}
+
+	.pattern-col-img {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.pattern-items {
+		padding: 50px 0 0;
+		background: $plat;
+
+		.header-phone {
+			display: flex;
+			justify-content: center;
+			width: 100%;
+			margin-bottom: 40px;
+			color: $white;
+
+			@media all and (min-width: $md) {
+				font-size: 20px;
+			}
+
+			@media all and (min-width: $xl) {
+				font-size: 30px;
+			}
+
+			img {
+				margin-right: 10px;
+			}
+		}
+	}
+
+	.discount {
+		background: $corn-blue;
+
+		.form-button {
+			background: $accent;
+			color: $white;
+
+			&:hover {
+				background: $corn-blue;
+
+			}
+		}
+
+		h2 {
+			color: $white;
+		}
+	}
