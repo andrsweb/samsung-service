@@ -1,0 +1,44 @@
+.discount {
+    padding: 40px 0;
+    background: $corn-blue;
+
+    &-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        align-self: center;
+    }
+
+    .hero-form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        order: 2;
+
+        @media all and (min-width: $lg) {
+            width: 50%;
+            order: 1;
+        }
+
+        h2 {
+            display: block;
+            color: $white;
+            margin: 0 0 20px 0;
+            font-size: 25px;
+        }
+    }
+
+    &-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        order: 1;
+        margin-bottom: 40px;
+
+        @media all and (min-width: $lg) {
+            width: 50%;
+            order: 2;
+        }
+    }
+}
