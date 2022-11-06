@@ -4,6 +4,11 @@
 
 	h2 {
 		color: $accent;
+		margin: 0 0 20px 0;
+
+		@media all and (min-width: $lg) {
+            margin: 0 0 50px 0;
+        }
 	}
 
 	.testimonials-list-title {
@@ -11,6 +16,16 @@
 		text-align: left;
 		margin: 0 0 30px 0;
 		text-decoration: underline;
+		font-size: 14px;
+
+		@media all and (min-width: $sm) {
+            font-size: 16px;
+        }
+
+		@media all and (min-width: $lg) {
+            margin: 0 0 60px 0;
+			font-size: 22px;
+        }
 	}
 
 	.main-content {
@@ -20,15 +35,24 @@
 	}
 
 	.main-content-left {
-		padding-top: 100px;
-		width: 70%;
+		width: 100%;
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-start;
+		margin-right: 40px;
+
+		@media all and (min-width: $lg) {
+            padding-top: 100px;
+			width: calc( 70% - 40px );
+        }
 	}
 
 	.main-content-right {
-		width: 30%;
+		width: 100%;
+
+		@media all and (min-width: $lg) {
+			width: 30%;
+        }
 	}
 
 	.testimonials-list {
@@ -41,8 +65,16 @@
 		position: relative;
 		font-weight: $fw-bold;
 		margin-bottom: 20px;
-		font-size: 20px;
+		font-size: 12px;
 		padding-left: 40px;
+
+		@media all and (min-width: $sm) {
+            font-size: 14px;
+        }
+
+		@media all and (min-width: $lg) {
+			font-size: 18px;
+        }
 
 		&::before {
 			display: block;
@@ -61,7 +93,7 @@
 		max-width: 700px;
 		display: flex;
 		flex-direction: column;
-		max-height: 350px;
+		max-height: 390px;
 		margin: 0;
 		border-radius: 10px;
 		box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3)
@@ -74,7 +106,7 @@
 
 	.testimonials-slide {
 		width: 100%;
-		max-height: 350px;
+		max-height: 390px;
 	}
 
 	.swiper-slide-inner {
@@ -90,32 +122,66 @@
 		color: $accent;
 		text-align: center;
 		font-size: 25px;
+		margin-bottom: 10px;
 	}
 
 	.swiper-slide-content {
 		display: flex;
-	}
-
-	.swiper-slide-stars {
-		width: 50%;
-		display: flex;
+		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 
+		@media all and (min-width: $m) {
+            flex-direction: row;
+        }
+	}
+
+	.img-box {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 50%;
+
+		@media all and (min-width: $sm) {
+            width: 40%
+        }
+
 		img {
-			max-height: 50%;
-			margin-right: 10px;
+			width: 100%;
+			height: auto;
 		}
 	}
 
+	.swiper-slide-stars {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
 	.swiper-slide-img {
-		width: 50%;
+		width: 20%;
+		margin-bottom: 20px;
+
+		@media all and (min-width: $m) {
+            margin-bottom: 0;
+        }
+
+		@media all and (min-width: $lg) {
+            width: 50%;
+        }
 	}
 
 	.swiper-slide-text {
-		font-size: 15px;
+		font-size: 12px;
 		margin-top: 20px;
 		text-align: center;
+		overflow-y: auto;
+		max-height: 185px;
+
+		@media all and (min-width: $sm) {
+            font-size: 14px;
+        }
 	}
 
 	.sidebar {
@@ -128,6 +194,11 @@
 		max-height: 800px;
 		padding: 30px 10px;
 		border-radius: 20px;
+		margin-top: 70px;
+
+		@media all and (min-width: $lg) {
+            margin: 0;
+        }
 	}
 
 	.sidebar-title {

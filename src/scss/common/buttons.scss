@@ -48,7 +48,7 @@
 }
 
 .form-button {
-	padding: 8px 20px;
+	padding: 8px 10px;
 	background: $white;
 	border: 0;
 	border-radius: 5px;
@@ -63,6 +63,10 @@
 	&:hover {
 		background: $blue;
 		color: $white;
+	}
+
+	@media all and (min-width: $m) {
+		padding: 8px 20px;
 	}
 }
 
