@@ -6,13 +6,9 @@
         max-width: 1200px;
     }
 
-    h3 {
-        margin: 0;
-        cursor: pointer;
-    }
-
     &-content {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
     }
 
@@ -20,6 +16,14 @@
         display: flex;
         flex-direction: column;
         width: 100%;
+
+        @media all and (min-width: $md) {
+            width: 65%;
+        }
+
+        @media all and (min-width: $lg) {
+            width: 70%;
+        }
     }
 
     .dropdown {
@@ -34,7 +38,6 @@
         }
     }
 
-
     .dropdown-img {
         display: flex;
         align-items: center;
@@ -48,6 +51,28 @@
         align-items: center;
         margin-bottom: 30px;
         max-width: 500px;
+
+        img {
+            max-width: 50%;
+
+            @media all and (min-width: $sm) {
+                max-width: 80%;
+            }
+
+            @media all and (min-width: $lg) {
+                max-width: 100%;
+            }
+        }
+    }
+
+    .dropdown-start {
+        font-size: 11px;
+        margin: 0;
+        cursor: pointer;
+
+        @media all and (min-width: $sm) {
+            font-size: 18px
+        }
     }
 
     .dropdown-open {
@@ -56,9 +81,8 @@
         display: flex;
         flex-direction: column;
         transition: height ease 1s;
+        padding: 0 20px;
     }
-
-    .dropdown-inner {}
 
     .dropdown-row-name {
         display: flex;
@@ -66,11 +90,40 @@
 
     .dropdown-col-name {
         width: 50%;
+        font-size: 12px;
+        margin-bottom: 40px;
+        display: flex;
+
+        @media all and (min-width: $m) {
+            font-size: 18px
+        }
+
+        &:last-child {
+            justify-content: flex-end;
+
+            @media all and (min-width: $lg) {
+                justify-content: flex-start;
+            }
+        }
     }
 
     .dropdown-col {
         width: 50%;
         margin-bottom: 20px;
+        font-size: 12px;
+        display: flex;
+
+        @media all and (min-width: $sm) {
+            font-size: 15px
+        }
+
+        &:last-child {
+            justify-content: flex-end;
+
+            @media all and (min-width: $lg) {
+                justify-content: flex-start;
+            }
+        }
     }
 
     .dropdown-row {
@@ -78,14 +131,22 @@
     }
 
     .sidebar {
-        background: $accent;
+        background: $corn-blue;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 30%;
+        width: 100%;
         max-height: 800px;
         padding: 30px 10px;
         border-radius: 20px;
+
+        @media all and (min-width: $md) {
+            width: 35%;;
+        }
+
+        @media all and (min-width: $lg) {
+            width: 30%;
+        }
     }
 
     .sidebar-title {
@@ -98,20 +159,36 @@
         text-align: center;
         margin-bottom: 100px;
         color: $white;
+
+        @media all and (min-width: $m) {
+            font-size: 16px
+        }
+
+        @media all and (min-width: $md) {
+            margin-bottom: 50px;
+        }
     }
 
     .sidebar-text {
-        font-size: 20px;
+        font-size: 15px;
         text-align: center;
         color: $white;
+
+        @media all and (min-width: $m) {
+            font-size: 20px
+        }
     }
 
     .header-phone {
         display: flex;
         justify-content: center;
         width: 100%;
-        margin-bottom: 50px;
+        margin-bottom: 40px;
         color: $white;
+
+        @media all and (min-width: $md) {
+            font-size: 20px;
+        }
 
         img {
             margin-right: 10px;
@@ -119,28 +196,41 @@
     }
 
     .bottom-form {
-        background: $accent;
+        padding: 0;
+        background: transparent;
+
         .form-privacy {
             text-align: center;
             font-size: 12px;
             width: 100%;
             margin-top: 10px;
         }
-    }
 
-    .hero-form {
+        .hero-form {
+            @media all and (min-width: $lg) {
+                width: 100%;
+            }
+            fieldset {
+                flex-direction: column;
+                width: 100%;
+            }
 
-        fieldset {
+            .form-button {
+                margin-top: 20px;
+            }
+
+            .form-phone {
+                margin-right: 0;
+            }
+        }
+
+        .hero-form-wrapper {
+            display: flex;
             flex-direction: column;
-        }
 
-        .form-button {
-            margin-top: 20px;
+            @media all and (min-width: $lg) {
+                flex-direction: row;
+            }
         }
-    }
-
-    .hero-form-wrapper {
-        display: flex;
-        flex-direction: column;
     }
 }
