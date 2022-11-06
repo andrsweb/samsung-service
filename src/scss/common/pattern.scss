@@ -1,18 +1,44 @@
 	.pattern-info {
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: space-between;
 		align-items: center;
 	}
 
 	.pattern-text {
-		width: 50%;
+		width: 100%;
 		font-weight: $fw-medium;
-		font-size: 25px;
+		font-size: 15px;
 		color: $accent;
+		text-align: center;
+		margin-bottom: 50px;
+
+		@media all and (min-width: $lg) {
+			font-size: 20px;
+			width: 50%;
+			text-align: left;
+			margin: 0;
+		}
 	}
 
 	.pattern-img {
-		width: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		margin: 0 auto;
+
+		@media all and (min-width: $sm) {
+			width: 80%;
+		}
+
+		@media all and (min-width: $md) {
+			width: 60%;
+		}
+
+		@media all and (min-width: $lg) {
+			width: 50%;
+		}
 	}
 
 	.pattern-allert {
@@ -22,12 +48,22 @@
 
 	.pattern-information {
 		display: flex;
-		justify-content: space-between;
+		flex-direction: column;
 		align-items: center;
+
+		@media all and (min-width: $lg) {
+			flex-direction: row;
+			justify-content: space-between;
+		}
 
 		h3 {
 			color: $plat;
-			font-size: 30px;
+			font-size: 20px;
+			margin: 20px 0;
+
+			@media all and (min-width: $lg) {
+				font-size: 25px;
+			}
 		}
 	}
 
@@ -43,20 +79,39 @@
 
 	.pattern-col-left {
 		display: flex;
+		flex-wrap: wrap;
 		flex-direction: column;
-		width: 70%;
-		padding: 40px;
+		width: 100%;
+		padding: 10px;
+
+		@media all and (min-width: $lg) {
+			flex-direction: row;
+			padding: 40px;
+			width: 70%;
+		}
 
 		p {
 			color: $accent;
-			font-size: 30px;
+			font-size: 15px;
 			text-align: center;
 			margin-bottom: 50px;
+
+			@media all and (min-width: $md) {
+				font-size: 18px;
+			}
+
+			@media all and (min-width: $lg) {
+				font-size: 20px;
+			}
 		}
 	}
 
 	.pattern-col-right {
-		width: 30%;
+		width: 100%;
+
+		@media all and (min-width: $lg) {
+			width: 30%;
+		}
 
 		.sidebar {
 			width: 100%;
@@ -69,6 +124,10 @@
 			padding: 30px 10px;
 			border-radius: 20px;
 			margin-top: 70px;
+
+			@media all and (min-width: $md) {
+				margin-top: 20px;
+			}
 
 			@media all and (min-width: $lg) {
 				margin: 0;
@@ -174,7 +233,7 @@
 	}
 
 	.pattern-items {
-		padding: 50px 0 0;
+		padding: 50px 0 ;
 		background: $plat;
 
 		.header-phone {
@@ -207,7 +266,6 @@
 
 			&:hover {
 				background: $corn-blue;
-
 			}
 		}
 
