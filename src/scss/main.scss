@@ -1,4 +1,5 @@
 // Defaults styles.
+@import '../../node_modules/swiper/swiper-bundle.min';
 @import 'common/fonts';
 @import 'common/vars';
 @import 'common/typography';
@@ -29,4 +30,8 @@
 // Price styles
 @import 'sections/price/price-on';
 @import 'sections/price/dropdowns';
+
+//testimonials styles
+@import 'sections/testimonials/testimonials';
+@import 'sections/testimonials/testimonials-main-content'
 

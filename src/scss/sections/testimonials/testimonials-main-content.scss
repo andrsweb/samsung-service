@@ -1,0 +1,312 @@
+.testimonials-main {
+	padding: 50px 0;
+	background: $plat;
+
+	h2 {
+		color: $accent;
+		margin: 0 0 20px 0;
+
+		@media all and (min-width: $lg) {
+            margin: 0 0 50px 0;
+        }
+	}
+
+	.testimonials-list-title {
+		color: $accent;
+		text-align: left;
+		margin: 0 0 30px 0;
+		text-decoration: underline;
+		font-size: 14px;
+
+		@media all and (min-width: $sm) {
+            font-size: 16px;
+        }
+
+		@media all and (min-width: $lg) {
+            margin: 0 0 60px 0;
+			font-size: 22px;
+        }
+	}
+
+	.main-content {
+		display: flex;
+		padding-bottom: 40px;
+		flex-wrap: wrap;
+	}
+
+	.main-content-left {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		margin-right: 40px;
+
+		@media all and (min-width: $lg) {
+            padding-top: 100px;
+			width: calc( 70% - 40px );
+        }
+	}
+
+	.main-content-right {
+		width: 100%;
+
+		@media all and (min-width: $lg) {
+			width: 30%;
+        }
+	}
+
+	.testimonials-list {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 50px;
+	}
+
+	.testimonials-list-item {
+		position: relative;
+		font-weight: $fw-bold;
+		margin-bottom: 20px;
+		font-size: 12px;
+		padding-left: 40px;
+
+		@media all and (min-width: $sm) {
+            font-size: 14px;
+        }
+
+		@media all and (min-width: $lg) {
+			font-size: 18px;
+        }
+
+		&::before {
+			display: block;
+			content: "";
+			background: $corn-blue;
+			width: 10px;
+			height: 10px;
+			position: absolute;
+			top: 50%;
+			left: 0;
+			transform: translateY( -50% );
+		}
+	}
+
+	.content-wrapper {
+		max-width: 700px;
+		display: flex;
+		flex-direction: column;
+		max-height: 390px;
+		margin: 0;
+		border-radius: 10px;
+		box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3)
+		0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+	}
+
+	.testimonials-slides {
+		display: flex;
+	}
+
+	.testimonials-slide {
+		width: 100%;
+		max-height: 390px;
+	}
+
+	.swiper-slide-inner {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		border-radius: 20px;
+		padding: 20px;
+	}
+
+	.swiper-slide-title {
+		font-weight: $fw-bold;
+		color: $accent;
+		text-align: center;
+		font-size: 25px;
+		margin-bottom: 10px;
+	}
+
+	.swiper-slide-content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		@media all and (min-width: $m) {
+            flex-direction: row;
+        }
+	}
+
+	.img-box {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 50%;
+
+		@media all and (min-width: $sm) {
+            width: 40%
+        }
+
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	.swiper-slide-stars {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.swiper-slide-img {
+		width: 20%;
+		margin-bottom: 20px;
+
+		@media all and (min-width: $m) {
+            margin-bottom: 0;
+        }
+
+		@media all and (min-width: $lg) {
+            width: 50%;
+        }
+	}
+
+	.swiper-slide-text {
+		font-size: 12px;
+		margin-top: 20px;
+		text-align: center;
+		overflow-y: auto;
+		max-height: 185px;
+
+		@media all and (min-width: $sm) {
+            font-size: 14px;
+        }
+	}
+
+	.sidebar {
+		width: 100%;
+		background: $corn-blue;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 100%;
+		max-height: 800px;
+		padding: 30px 10px;
+		border-radius: 20px;
+		margin-top: 70px;
+
+		@media all and (min-width: $lg) {
+            margin: 0;
+        }
+	}
+
+	.sidebar-title {
+		margin-bottom: 20px;
+		color: $white;
+	}
+
+	.sidebar-phone-text {
+		font-size: 14px;
+		text-align: center;
+		margin-bottom: 100px;
+		color: $white;
+
+		@media all and (min-width: $m) {
+			font-size: 16px
+		}
+
+		@media all and (min-width: $md) {
+			margin-bottom: 50px;
+		}
+	}
+
+	.sidebar-text {
+		font-size: 15px;
+		text-align: center;
+		color: $white;
+
+		@media all and (min-width: $m) {
+			font-size: 20px
+		}
+	}
+
+	.header-phone {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		margin-bottom: 40px;
+		color: $white;
+
+		@media all and (min-width: $md) {
+			font-size: 20px;
+		}
+
+		@media all and (min-width: $xl) {
+			font-size: 30px;
+		}
+
+		img {
+			margin-right: 10px;
+		}
+	}
+
+	.bottom-form {
+		padding: 0;
+		background: transparent;
+
+		.form-privacy {
+			text-align: center;
+			font-size: 12px;
+			width: 100%;
+			margin-top: 10px;
+		}
+
+		.hero-form {
+			@media all and (min-width: $lg) {
+				width: 100%;
+			}
+
+			fieldset {
+				flex-direction: column;
+				width: 100%;
+			}
+
+			.form-button {
+				margin-top: 20px;
+			}
+
+			.form-phone {
+				margin-right: 0;
+			}
+		}
+
+		.hero-form-wrapper {
+			display: flex;
+			flex-direction: column;
+
+			@media all and (min-width: $lg) {
+				flex-direction: row;
+			}
+		}
+	}
+
+	.discount {
+		background: $corn-blue;
+		border-radius: 20px;
+
+		.form-button {
+			background: $accent;
+			color: $white;
+
+			&:hover {
+				background: $corn-blue;
+
+			}
+		}
+		h2 {
+			color: $white;
+		}
+	}
+}
+

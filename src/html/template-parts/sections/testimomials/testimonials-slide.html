@@ -1,0 +1,38 @@
+<section class="testimonials-main">
+	<div class="container">
+		<h2>Ваши отзывы</h2>
+		<div class="main-content">
+			<div class="main-content-left">
+				<ul class="testimonials-list">
+					<h3 class="testimonials-list-title">Отзывы и рекомендации</h3>
+					<li class="testimonials-list-item">Мы гордимся нашими сотрудниками</li>
+					<li class="testimonials-list-item">Клиенты нас уважают и рекомендуют друзьям</li>
+					<li class="testimonials-list-item">Мы ждем от вас советы, пожелания и предложения</li>
+					<li class="testimonials-list-item">Все отзывы рассматриваются в обязательном порядке</li>
+				</ul>
+				<div class="content-wrapper swiper">
+					<div class="swiper-wrapper testimonials-slides">
+						@@loop( 'slide.html', [
+							{ "class-slide": "testimonials-slide", "title": "Андрей","text": "Благодарен за профессиональную установку встроенного холодильника и стиралки, справились быстро. Потребовались дополнительные работы, все выполнили аккуратно, даже придраться не к чему.", "star-b": "img/testimonials-page/star-b.png",
+								"star-g": "img/testimonials-page/star-g.png", "full": "5", "grey": "0"},
+							{ "class-slide": "testimonials-slide", "title": "Виктор","text": "Хочется оставить положительный отзыв о сервисном центре Самсунг, где я чинил монитор этого бренда. Умеют ребята работать, есть все необходимые запчасти. По ценам я не сравнивал, мне главное качество и скорость работы. В этом плане нареканий нет. Обещали через час сделать, так и готово было. ", "star-b": "img/testimonials-page/star-b.png",
+							"star-g": "img/testimonials-page/star-g.png", "full": "3", "grey": "2"},
+							{ "class-slide": "testimonials-slide", "title": "Джамиль","text": "Понравился специалист, выполняющий диагностику. Хочу отметить в нем важное качество - умение решать спорные вопросы. Мастер на редкость адекватный, всем бы побольше таких. ", "star-b": "img/testimonials-page/star-b.png",
+							"star-g": "img/testimonials-page/star-g.png", "full": "5", "grey": "0"},
+							{ "class-slide": "testimonials-slide", "title": "Сюзанна","text": "Хороший сервис, выражаю благодарность мастеру Олегу, который починил мой ноутбук. Я без него работать не могу, переживала, что будет долго и дорого. Но и по цене все устроило. А диагностика у них вообще бесплатная! Рекомендую!", "star-b": "img/testimonials-page/star-b.png",
+							"star-g": "img/testimonials-page/star-g.png", "full": "4", "grey": "1"},
+							{ "class-slide": "testimonials-slide", "title": "Петрович","text": "В целом сервис понравился, но задержка диагностики немного подпортила впечатление. Менеджер компенсировал ожидание скидкой, так что вопрос исчерпан. ", "star-b": "img/testimonials-page/star-b.png",
+							"star-g": "img/testimonials-page/star-g.png", "full": "4", "grey": "1"},
+							{ "class-slide": "testimonials-slide", "title": "Игорь","text": "Для ремонта стиралки обращался в сервисный центр Самсунг. Заявку приняли по телефону, выезд специалиста и диагностика у них бесплатные. В машинке заменили изношенные подшипники, теперь работает тихо, и не прыгает при отжиме. ", "star-b": "img/testimonials-page/star-b.png",
+							"star-g": "img/testimonials-page/star-g.png", "full": "3", "grey": "2"}
+						] )
+					</div>
+				</div>
+			</div>
+			<div class="main-content-right">
+				@@include( '../price/sidebar.html')
+			</div>
+		</div>
+		@@include( '../price/discount.html')
+	</div>
+</section>
