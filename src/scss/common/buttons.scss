@@ -2,7 +2,7 @@
 	font-family: $ff;
 	font-weight: $fw-medium;
 	padding: 8px 40px;
-	border: 0;
+	border: 3px solid $accent;
 	border-radius: 5px;
 	color: $accent;
 	background: $white;
@@ -21,7 +21,6 @@
 	&:hover {
 		color: $white;
 		background: $accent;
-
 	}
 
 	&.header-button {
@@ -49,19 +48,19 @@
 
 .form-button {
 	padding: 8px 10px;
-	background: $white;
-	border: 0;
+	background: $accent;
 	border-radius: 5px;
-	color: $accent;
+	color: $white;
 	font-family: $ff;
 	font-weight: $fw-medium;
 	font-size: 15px;
 	cursor: pointer;
+	border: 3px solid $white;
 	transition: background ease $tr,
 					color ease $tr;
 
 	&:hover {
-		background: $blue;
+		background: $corn-blue;
 		color: $white;
 	}
 
