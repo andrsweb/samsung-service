@@ -1,12 +1,7 @@
 <div class="hero-form-wrapper">
-    <form class="hero-form" action="">
-        <fieldset>
-            <input class="form-phone" name="phone" type="tel" placeholder="Введите номер телефона">
-            <button class="form-button">
-                @@text
-            </button>
-        </fieldset>
-    </form>
+    @@loop( 'form.html', [
+        { "text": "Перезвоните мне"}
+    ] )
     <p class="form-privacy">
         Нажимая на кнопку «Заказать ремонт», вы подтверждаете своё совершеннолетие и соглашаетесь на обработку персональных данных
         <a class="form-privacy-link" href="">в соответствии с условиями.</a>
