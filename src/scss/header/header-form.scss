@@ -1,0 +1,114 @@
+.header-form {
+    position:fixed;
+    display:none;
+    align-items:center;
+    justify-content:center;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:100%;
+    z-index: 100;
+    overflow-y: auto;
+    padding: 20px;
+    background: rgb(255, 255, 255, 0.85);
+
+    .form {
+        position: relative;
+        width: 100%;
+        max-width: 550px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 0;
+        margin: auto 0;
+        border-radius: 20px;
+        background: $corn-blue;
+        box-shadow: 4px 3px 20px -1px rgba(190, 188, 188, 0.54);
+    }
+
+    &.opened {
+        display: flex;
+    }
+}
+
+fieldset {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 0;
+    padding: 30px;
+}
+
+input {
+    font-family: $ff;
+    font-size: $fs-xs;
+    border: none;
+    padding: 10px;
+    border-radius: 3px;
+    transition: $tr;
+    background-color: $plat;
+
+    @media all and (min-width: $md) {
+		font-size: $fs-sm;
+	}
+
+    &::placeholder {
+        opacity: 1;
+    }
+}
+
+
+.form-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-name {
+    font-family: $ff;
+    display: flex;
+}
+
+.form-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    width: 100%;
+}
+.email {
+    width: 100%;
+}
+
+.form-info, .email, .form-name {
+    margin-bottom: 10px;
+}
+
+.phone {
+    width: 100%;
+}
+
+textarea {
+    font-family: $ff;
+    width: 100%;
+    height: 100px;
+    font-size: $fs-xs;
+    padding: 10px;
+    resize: none;
+    border: none;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    background-color: $plat;
+
+    @media all and (min-width: $md) {
+		font-size: $fs-sm;
+	}
+
+    &::placeholder {
+        font-family: $ff;
+        opacity: 1;
+    }
+}
