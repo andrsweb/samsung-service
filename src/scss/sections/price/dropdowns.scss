@@ -53,6 +53,7 @@
         max-width: 500px;
 
         img {
+            display: block;
             max-width: 50%;
 
             @media all and (min-width: $sm) {
@@ -66,6 +67,7 @@
     }
 
     .dropdown-start {
+        display: block;
         font-size: 11px;
         margin: 0;
         cursor: pointer;
@@ -95,14 +97,15 @@
         display: flex;
 
         @media all and (min-width: $m) {
-            font-size: 18px
+            font-size: 18px;
+            justify-content: center;
         }
 
         &:last-child {
-            justify-content: flex-end;
+            justify-content: center;
 
             @media all and (min-width: $lg) {
-                justify-content: flex-start;
+                justify-content: center;
             }
         }
     }
@@ -112,16 +115,17 @@
         margin-bottom: 20px;
         font-size: 12px;
         display: flex;
+        justify-content: center;
 
         @media all and (min-width: $sm) {
             font-size: 15px
         }
 
         &:last-child {
-            justify-content: flex-end;
+            justify-content: center;
 
             @media all and (min-width: $lg) {
-                justify-content: flex-start;
+                justify-content: center;
             }
         }
     }

@@ -9,33 +9,35 @@
 @@include( '../home/advantages/advantages.html')
 <section class="repair-price">
     <div class="container">
-        <h2>Ремонт телефонов Самсунг </h2>
+        <h2>Ремонт телефонов Самсунг</h2>
         @@include('../price/dropdown.html', { 'title': 'Ремонт смартфонов',
         "item1": "Замена дисплея", "price1": "500р", "item2": "Замена сенсорного стекла", "price2": "500р",
         "item3": "Замена аккумулятора", "price3": "1500р", "item4": "Замена разьема", "price4": "500р", "item5": "Замена камеры", "price5": "500р",
         "item6": "Замена кнопок", "price6": "500р", "item7": "Замена корпуса", "price7": "500р", "item8": "Прошивка", "price8": "500р",
         "item9": "Восстановление после залития", "price9": "500р", "item10": "Замена тач дисплея", "price10": "500р",
         "category": "Услуга",
-        heading: 'Стоимость ремонта' })
+        heading: 'Стоимость ремонта', "class": "off"})
     </div>
 </section>
 @@include( '../home/bottom-form/bottom-form.html')
 <section class="repair-question">
 	<div class="container">
-		<div class="repair-question-text">
-			<h2>
-				В списке отсутствует ваша неисправность?
-			</h2>
-			<p class="repair-subtext">
-				Наши специалисты проконсультируют вас
-				по любым вопросам! Оставьте ваши контакты
-			</p>
-		</div>
-		<div class="repair">
-			@@include( '../../header/phone.html')
-			<button class="button repair-button">
-				Консультация
-			</button>
+		<div class="repair-question-wrapp">
+			<div class="repair-question-text">
+				<h2>
+					В списке отсутствует ваша неисправность?
+				</h2>
+				<p class="repair-question-subtext">
+					Наши специалисты проконсультируют вас
+					по любым вопросам! Оставьте ваши контакты
+				</p>
+			</div>
+			<div class="repair-question-btn">
+				@@include( '../../header/phone.html')
+				<button class="button repair-button">
+					Консультация
+				</button>
+			</div>
 		</div>
 	</div>
 </section>

@@ -7,12 +7,16 @@
     }
 }
 
+.advantages {
+    background: $plat;
+}
+
 .hero-pattern-headings {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    text-align: center;
+
 
     @media all and (min-width: $xl) {
         width: 50%;
@@ -21,10 +25,133 @@
 
 .hero-pattern-bg {
     width: 100%;
+
+    @media all and (min-width: $xl) {
+        width: 50%;
+    }
 }
 
 .hero-pattern-subtitle {
     color: $white;
     font-size: 12px;
     margin-bottom: 30px;
+    text-align: center;
+
+    @media all and (min-width: $xl) {
+        font-size: 15px;
+    }
+}
+
+.dropdown {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+
+    &.opened {
+        .dropdown-img {
+            transform: rotate( 180deg);
+        }
+    }
+}
+
+.dropdown-img {
+    transition: transform ease 1s;
+    margin-right: 10px;
+}
+
+.dropdown-open {
+    overflow: hidden;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    transition: height ease 1s;
+    padding: 0 20px;
+}
+
+.dropdown-start {
+    display: none;
+    font-size: 11px;
+    margin: 0;
+    cursor: pointer;
+
+    @media all and (min-width: $sm) {
+        font-size: 18px
+    }
+}
+
+.dropdown-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    max-width: 100%;
+
+    img {
+        display: none;
+        max-width: 50%;
+
+        @media all and (min-width: $sm) {
+            max-width: 80%;
+        }
+
+        @media all and (min-width: $lg) {
+            max-width: 100%;
+        }
+    }
+}
+
+.dropdown-inner {
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-row-name {
+    display: flex;
+}
+
+.dropdown-col-name {
+    width: 50%;
+    font-size: 12px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    background: $accent;
+    color: $white;
+
+    @media all and (min-width: $m) {
+        font-size: 18px
+    }
+
+    &:last-child {
+
+        @media all and (min-width: $lg) {
+            justify-content: center;
+        }
+    }
+}
+
+.dropdown-col {
+    width: 50%;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    @media all and (min-width: $sm) {
+        font-size: 15px
+    }
+
+    &:last-child {
+        justify-content: center;
+    }
+}
+
+.dropdown-row {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+    &:nth-child( 2n + 1) {
+        background: rgba(158, 158, 158, 0.11);
+    }
 }

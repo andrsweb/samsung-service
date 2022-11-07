@@ -14,7 +14,7 @@ const toogleDropdown = () => {
         dropdown.addEventListener( 'click', () => {
             const dropdownOpen = dropdown.querySelector( '.dropdown-open' )
 
-            if ( ! dropdownOpen ) return
+            if ( ! dropdownOpen || dropdownOpen.classList.contains( 'off' ) ) return
 
             if ( ! dropdown.classList.contains( 'opened') ) {
                 dropdown.classList.add( 'opened' )
