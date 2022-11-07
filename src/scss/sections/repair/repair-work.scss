@@ -1,0 +1,51 @@
+.repair-work {
+    padding: 25px 0;
+    background: $plat;
+
+    @media all and (min-width: $md) {
+        padding: 50px 0;
+    }
+
+    &-items {
+        display: flex;
+        margin: 0 -20px;
+        flex-wrap: wrap;
+    }
+
+    &-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 20;
+        width: calc( 100% / 1 );
+        margin-bottom: 40px;
+
+        @media all and (min-width: $m) {
+            width: calc( 100% / 2);
+        }
+    }
+
+    &-img {
+        margin-bottom: 20px;
+    }
+
+    &-title {
+        font-weight: $fw-bold;
+        font-size: 15px;
+
+        @media all and (min-width: $m) {
+            font-size: 18px;
+        }
+    }
+
+    &-text {
+        text-align: center;
+        font-size: 12px;
+        min-height: 50px;
+
+        @media all and (min-width: $m) {
+            font-size: 15px;
+        }
+    }
+}
