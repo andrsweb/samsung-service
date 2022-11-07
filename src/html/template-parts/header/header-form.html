@@ -1,19 +1,20 @@
-<div class="header-form" id="form-lock">
-    <form class="form">
+<div class="form-wrapper" id="body-lock">
+	<form class="form">
+		<div class="legend">
+            Обратный звонок
+        </div>
+        <div class="close-button">
+            <span></span>
+        </div>
         <fieldset>
-            <div class="form-wrapper">
-                <div class="form-name">
-                    <input class="name" type="text" placeholder="Ваше имя">
-                </div>
-                <div class="form-info">
-                    <input class="email" type="email" placeholder="Ваша почта">
-                    <input class="phone" type="tel" placeholder="Ваш телефон">
-                </div>
-            </div>
-            <textarea name="text" placeholder="Напишите здесь сообщение"></textarea>
-			<button class="form-button">
-				Отправить нам
-			</button>
-        </fieldset>
-    </form>
+            <input name="person-name" type="text" placeholder="Имя" required>
+            <input name="person-phone" type="tel" autocomplete="off"  placeholder="Номер телефона" required>
+            <textarea name="textarea" placeholder="Сообщение" required></textarea>
+            <button class="button form-button" type="submit">
+                Отправить заявку
+            </button>
+
+			<div class="form-response"></div>
+		</fieldset>
+	</form>
 </div>
