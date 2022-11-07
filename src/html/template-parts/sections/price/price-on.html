@@ -3,8 +3,6 @@
         @@loop( '../../breadcrumbs/breadcrumb.html', [
             { "name" : "Цены на услуги" }
         ] )
-        @@loop( 'hero-pattern.html', [
-            { "title": "Цены на ремонт техники", "src": "img/price-page/price-on/micro.png" }
-        ] )
+        @@include( '../price/hero-pattern.html', { title : 'Наши контакты', src: 'img/contacts/tel.png', 'subtitle': ''})
     </div>
 </section>

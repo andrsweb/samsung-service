@@ -1,0 +1,30 @@
+.repair-hero {
+    padding: 40px 0;
+    background: $corn-blue;
+
+    @media all and (min-width: $md) {
+        padding: 90px 0;
+    }
+}
+
+.hero-pattern-headings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+
+    @media all and (min-width: $xl) {
+        width: 50%;
+    }
+}
+
+.hero-pattern-bg {
+    width: 100%;
+}
+
+.hero-pattern-subtitle {
+    color: $white;
+    font-size: 12px;
+    margin-bottom: 30px;
+}

@@ -4,7 +4,6 @@
             { "name": "Отзывы и рекомендации"}
         ] )
 
-        @@loop( '../price/hero-pattern.html', [
-        { "title": "Отзывы и рекомендации", "src": "img/testimonials-page/testimonial.png" }
-    ] )
+        @@include( '../price/hero-pattern.html', { title : 'Отзывы и рекомендации', src: 'img/testimonials-page/testimonial.png', 'subtitle': '', })
+
 </section>
