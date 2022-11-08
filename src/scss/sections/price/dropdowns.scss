@@ -161,7 +161,7 @@
     .sidebar-phone-text {
         font-size: 14px;
         text-align: center;
-        margin-bottom: 100px;
+        margin-bottom: 50px;
         color: $white;
 
         @media all and (min-width: $m) {
@@ -189,6 +189,7 @@
         width: 100%;
         margin-bottom: 40px;
         color: $white;
+        padding: 0;
 
         @media all and (min-width: $md) {
             font-size: 20px;
@@ -196,10 +197,6 @@
 
         @media all and (min-width: $xl) {
             font-size: 30px;
-        }
-
-        img {
-            margin-right: 10px;
         }
     }
 

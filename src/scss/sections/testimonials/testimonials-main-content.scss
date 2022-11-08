@@ -237,6 +237,7 @@
 		width: 100%;
 		margin-bottom: 40px;
 		color: $white;
+		padding: 0;
 
 		@media all and (min-width: $md) {
 			font-size: 20px;
@@ -244,10 +245,6 @@
 
 		@media all and (min-width: $xl) {
 			font-size: 30px;
-		}
-
-		img {
-			margin-right: 10px;
 		}
 	}
 
