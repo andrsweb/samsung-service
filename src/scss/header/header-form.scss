@@ -119,9 +119,10 @@
 	}
 
 	.form-response {
-        font-size: 10px;
+		text-align: center;
+        font-size: 15px;
 		margin-top: 10px;
-		color: rgb(78, 115, 172);
+		color: $accent;
 	}
 }
 
