@@ -1,0 +1,67 @@
+.contacts-main {
+    padding: 90px 0;
+    background: $corn-blue;
+
+    .pattern-col-left {
+        padding: 0;
+    }
+}
+
+.contacts-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h3 {
+        font-size: 20px; //30
+        align-items: center;
+        margin: 0 0 20px 0;
+
+        @media all and (min-width: $sm) {
+
+        }
+    }
+
+    .header-phone {
+        color: $accent;
+        font-size: 25px;
+        padding: 0;
+
+        @media all and (min-width: $md) {
+            font-size: 40px;
+        }
+    }
+}
+
+.contacts-list {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.contacts-item {
+    font-weight: $fw-bold;
+    text-align: center;
+
+    &:first-child{
+        font-size: 20px; //
+        margin-bottom: 20px;
+
+        @media all and (min-width: $md) {
+            font-size: 25px;
+        }
+    }
+
+    &:last-child {
+        font-size: 22px; //
+
+        @media all and (min-width: $md) {
+            font-size: 27px;
+        }
+    }
+}
+
+
+
+.header-img {}

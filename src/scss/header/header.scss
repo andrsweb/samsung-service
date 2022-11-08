@@ -1,0 +1,260 @@
+.header {
+	padding: 8px 0;
+	background: $white;
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 100%;
+	z-index: 100;
+	transition: box-shadow ease $tr,
+				padding ease $tr;
+
+	@media all and (min-width: $md) {
+		padding: 16px;
+	}
+
+	&.scrolled {
+		box-shadow: 1px 1px 6px 1px #f3ececef;
+		padding: 4px 0;
+
+		@media all and (min-width: $md) {
+			padding: 12px;
+		}
+	}
+
+	.container {
+		max-width: 1200px;
+	}
+
+	.header-ui {
+		padding: 10px 0;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		@media all and (min-width: $md) {
+			display: none;
+		}
+	}
+
+	&-wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+
+	&-box {
+		@media all and (min-width: $md) {
+			display: flex;
+		}
+	}
+
+	.header-inner {
+		opacity: 0;
+
+		@media all and (min-width: $md) {
+			opacity: 1;
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: space-between;
+		}
+
+		&.opened {
+			padding: 10px 0;
+			opacity: 1;
+			transition: opacity ease 1s;
+			overflow-y: auto;
+			position: fixed;
+			top: 57px;
+			left: 0;
+			background: $white;
+			width: 100%;
+			height: calc( 100vh - 57px );
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			align-items: center;
+
+			.header-menu {
+				width: 100%;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				margin-bottom: 100px;
+				order: 1;
+
+				@media all and (min-width: $md) {
+					width: 100%;
+				}
+			}
+
+			.header-menu-item {
+				margin: 0 0 10px 0;
+			}
+
+			.header-phone {
+				display: flex;
+				flex-direction: column;
+				width: 100%;
+				padding: 0;
+				margin-bottom: 20px;
+
+				img {
+					margin: 0;
+				}
+			}
+			.header-button {
+				display: block;
+				order: 2;
+				margin: 0 auto;
+			}
+		}
+	}
+
+	&-logo {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		cursor: pointer;
+		width: auto;
+		position: relative;
+		z-index: 10;
+	}
+
+	&-logo-md {
+		display: none;
+
+		@media all and (min-width: $md) {
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			cursor: pointer;
+			width: auto;
+		}
+
+		span {
+			font-size: 11px;
+			text-align: center;
+
+			@media all and (min-width: $md) {
+				font-size: 14px;
+			}
+		}
+	}
+
+	.header-button {
+		display: none;
+
+		@media all and (min-width: $md) {
+			display: block;
+		}
+	}
+
+	&-menu-text {
+		padding: 5px;
+		display: none;
+		position: absolute;
+		bottom: -25px;
+		right: 50%;
+		transform: translateX( 50%);
+		font-family: $ff;
+		font-weight: $fw-bold;
+		font-size: 14px;
+		color: $span;
+		white-space: nowrap;
+
+		@media all and (min-width: $md) {
+			display: block;
+		}
+	}
+
+	&-menu {
+		display: none;
+		margin-top: 25px;
+		justify-content: center;
+		width: 100%;
+
+		@media all and (min-width: $md) {
+			display: flex;
+		}
+	}
+
+	&-menu-item {
+		font-family: $ff;
+		font-size: 15px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+		color: $accent;
+		margin-right: 30px;
+		text-transform: uppercase;
+
+		@media all and (min-width: $md) {
+			font-size: 12px;
+			margin-right: 8px;
+		}
+
+		@media all and (min-width: $lg) {
+			font-size: 15px;
+			margin-right: 20px;
+		}
+
+		@media all and (min-width: $xl) {
+			margin-right: 30px;
+		}
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	&-phone {
+		position: relative;
+		display: none;
+		align-items: center;
+		justify-content: flex-end;
+		font-family: $ff;
+		font-weight: $fw-bold;
+		font-size: 24px;
+		color: $accent;
+		padding-right: 20px;
+		width: 100%;
+
+		@media all and (min-width: $md) {
+			display: flex;
+			font-size: 24px;
+			padding-right: 0;
+			margin-right: 20px;
+			width: auto;
+			margin-left: auto;
+		}
+
+		img {
+			margin-right: 10px;
+
+			@media all and (min-width: $md) {
+				max-width: 70%;
+				margin-right: 0;
+			}
+
+			@media all and (min-width: $xl) {
+				max-width: 100%;
+			}
+		}
+	}
+	&-ui-wrapp {
+		width: 100%;
+		position: relative;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+
+		@media all and (min-width: $md) {
+			width: auto;
+		}
+	}
+}

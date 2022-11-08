@@ -1,6 +1,7 @@
 // Grid.
 $xs	: 375px;
 $sm	: 480px;
+$m	: 576px;
 $md	: 768px;
 $lg	: 992px;
 $xl	: 1200px;
@@ -15,8 +16,7 @@ $container-xl: 1200px;
 $container-padding: 24px;
 
 // Font families.
-$ff			: Arial, sans-serif;
-$ff-title	: Arial, sans-serif;
+$ff			: 'Ruberoid', sans-serif;
 
 // Font sizes.
 $fs-xs	: 12px;
@@ -29,7 +29,6 @@ $fs-xl	: 20px;
 $fw-light	: 300;
 $fw-regular	: 400;
 $fw-medium	: 500;
-$fw-semibold: 600;
 $fw-bold	: 700;
 
 // Line heights.
@@ -37,8 +36,14 @@ $lh			: 1.5;
 $lh-title	: 1.3;
 
 // Colors.
-$white	: #FFFFFF;
-$black	: #000000;
+$white	      : #F6FFF8;
+$black	      : #000000;
+$accent       : #061A40;
+$corn-blue    : #0353A4;
+$span         : #ff3333;
+$blue         : #051a5f;
+$plat         : #EBEBEB;
 
 // Others.
 $tr: 0.35s;
+$op: 0.7;

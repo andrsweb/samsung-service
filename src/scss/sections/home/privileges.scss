@@ -1,0 +1,72 @@
+.privileges {
+    padding: 10px 0;
+    background: $white;
+
+    @media all and (min-width: $md) {
+        padding: 50px 0;
+    }
+
+    .container {
+        max-width: 1200px;
+    }
+
+    &-items {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -20px;
+    }
+
+    &-item {
+        padding: 0 -20px;
+        width: calc( 100% / 1 );
+        margin-bottom: 40px;
+
+        @media all and (min-width: $sm) {
+            width: calc( 100% / 2 );
+        }
+
+        @media all and (min-width: $lg) {
+            width: calc( 100% / 3 );
+        }
+    }
+
+    &-inner {
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    &-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    &-title {
+        font-family: $ff;
+        font-weight: $fw-bold;
+        font-size: 15px;
+        margin-bottom: 30px;
+
+        @media all and (min-width: $lg) {
+            font-size: 18px;
+        }
+    }
+
+    &-text {
+        font-family: $ff;
+        font-weight: $fw-regular;
+        font-size: 12px;
+        min-height: 50px;
+
+        @media all and (min-width: $lg) {
+            font-size: 15px;
+        }
+    }
+}

@@ -1,0 +1,46 @@
+.repair-info {
+    padding: 50px 0;
+    background: $plat;
+
+    h2 {
+        margin: 0 0 40px;
+    }
+
+    &-text {
+        font-size: 14px;
+
+        @media all and (min-width: $md) {
+            font-size: 18px;
+        }
+
+        a {
+            color: $corn-blue;
+        }
+    }
+
+    &-list {
+        margin: 20px 0;
+    }
+
+    &-list-item {
+        font-size: 12px;
+        position: relative;
+        padding-left: 20px;
+
+        @media all and (min-width: $md) {
+            font-size: 15px;
+        }
+
+        &::before {
+			display: block;
+			content: "";
+			background: $corn-blue;
+			width: 10px;
+			height: 10px;
+			position: absolute;
+			top: 50%;
+			left: 0;
+			transform: translateY( -50% );
+		}
+    }
+}

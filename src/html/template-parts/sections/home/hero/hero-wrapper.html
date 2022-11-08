@@ -1,0 +1,20 @@
+<div class="hero-wrapper">
+	<div class="hero-info">
+		<h1>
+			@@title
+		</h1>
+		@@loop( 'hero-list.html', [
+			{ "text": "Выезд мастера на дом за 45 минут", "class": "hide"},
+			{ "text": "Ремонт на дому и в сервисном центре", "class": "hide"},
+			{ "text": "Выезд по Москве и МО", "class": "hide"},
+			{ "text": " Гарантия от 1 года", "class": "hide"}
+		] )
+
+		@@loop( 'hero-form.html', [
+			{ "text": "Заказать ремонт" }
+		] )
+	</div>
+	<div class="hero-img">
+		<img src="img/hero/tech.png" width="500" height="900" alt="">
+	</div>
+</div>

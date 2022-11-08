@@ -1,0 +1,8 @@
+<section class="hero-pattern">
+    <div class="container">
+        @@loop( '../../breadcrumbs/breadcrumb.html', [
+            { "name" : "Цены на услуги" }
+        ] )
+        @@include( '../price/hero-pattern.html', { title : 'Наши контакты', src: 'img/contacts/tel.png', 'subtitle': ''})
+    </div>
+</section>

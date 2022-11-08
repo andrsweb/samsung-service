@@ -1,0 +1,155 @@
+.footer {
+    padding: 50px 0;
+    background: #061A40;
+
+    .container {
+        max-width: 1200px;
+    }
+
+    &-wrapp {
+        display: flex;
+        margin-bottom: 50px;
+        flex-wrap: wrap;
+    }
+
+    &-contacts {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+
+        @media all and (min-width: $m) {
+            width: 50%;
+        }
+
+        @media all and (min-width: $lg) {
+            // align-items: flex-end;
+        }
+    }
+
+    &-title {
+        font-family: $ff;
+        font-weight: $fw-bold;
+        color: $white;
+        margin-bottom: 20px;
+        font-size: 14px;
+
+        @media all and (min-width: $lg) {
+            margin-bottom: 50px;
+            font-size: 18px;
+        }
+    }
+
+    &-text {
+        font-family: $ff;
+        font-weight: $fw-medium;
+        color: $white;
+        font-size: 15px;
+        color: $plat;
+        margin-bottom: 30px;
+    }
+
+    &-schedule {
+        font-size: 15px;
+        margin-bottom: 25px;
+        color: $plat;
+        text-align: center;
+
+        @media all and (min-width: $m) {
+            margin-bottom: 50px;
+        }
+
+        @media all and (min-width: $lg) {
+            font-size: 20px;
+        }
+    }
+
+    &-address {
+        font-family: $ff;
+        font-weight: $fw-bold;
+        font-size: 18px;
+        color: $white;
+    }
+
+    &-num {
+        font-family: $ff;
+        font-weight: $fw-bold;
+        font-size: 25px;
+        margin-bottom: 30px;
+        color: $white;
+    }
+
+    &-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &-privacy {
+        width: 100%;
+        font-size: 10px;
+        color: $white;
+        text-align: center;
+        margin-bottom: 20px;
+
+        @media all and (min-width: $lg) {
+            font-size: 15px;
+        }
+    }
+
+    .privacy-link {
+        color: $plat;
+        font-weight: $fw-bold;
+    }
+
+    &-pay {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    &-pay-title {
+        font-family: $ff;
+        font-weight: $fw-bold;
+        color: $plat;
+        margin-bottom: 20px;
+    }
+
+    &-pay-items {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin: 0 -10px;
+    }
+
+    &-pay-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 10px;
+        width: calc( 100% / 4);
+    }
+
+    .header-menu {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+
+        @media all and (min-width: $m) {
+            width: 50%;
+        }
+    }
+
+    .header-menu-item {
+        color: $white;
+        margin: 0 0 20px 0;
+
+        @media all and (min-width: $m) {
+            font-size: 15px;
+        }
+    }
+}

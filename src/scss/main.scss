@@ -1,15 +1,70 @@
 // Defaults styles.
+@import '../../node_modules/swiper/swiper-bundle.min';
 @import 'common/fonts';
 @import 'common/vars';
 @import 'common/typography';
 @import 'common/grid';
 @import 'common/base';
+@import 'common/pattern';
+
+//buttons
+@import 'common/buttons.scss';
 
 // Header styles.
 @import 'header/header';
+@import 'header/header-form';
 
 // Footer styles.
 @import 'footer/footer';
+@import 'footer/phone-button';
 
 // Home page sections styles.
+@import 'sections/breadcrumbs';
+@import 'sections/discount';
 @import 'sections/home/hero';
+@import 'sections/home/hero-form';
+@import 'sections/home/advantages';
+@import 'sections/home/cards';
+@import 'sections/home/privileges';
+@import 'sections/home/certification';
+@import 'sections/home/info';
+@import 'sections/home/bottom-form';
+
+// Price styles
+@import 'sections/price/price-on';
+@import 'sections/price/dropdowns';
+
+//testimonials styles
+@import 'sections/testimonials/testimonials';
+@import 'sections/testimonials/testimonials-main-content';
+
+//diagnostic styles
+@import 'sections/diagnostic/diagnostic-main';
+
+//garranty styles
+@import 'sections/garranty/garranty';
+
+//delivery styles
+@import 'sections/delivery/delivery-main';
+
+//deadlines styles
+@import 'sections/deadlines/deadlines-main';
+
+//items styles
+@import 'sections/items/items-main';
+
+//contacts styles
+@import 'sections/contacts/contacts-main';
+@import 'sections/contacts/contacts-map';
+
+//repair default styles
+@import 'sections/repair/repair';
+@import 'sections/repair/repair-question';
+@import 'sections/repair/repair-work';
+@import 'sections/repair/repair-info';
+
+//privacy styles
+@import 'sections/privacy/privacy';
+
+
+
