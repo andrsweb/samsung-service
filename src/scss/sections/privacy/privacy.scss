@@ -1,0 +1,16 @@
+.privacy {
+    padding: 90px 0;
+    background: $plat;
+
+    &-text {
+        font-size: 12px;
+    }
+
+    h3 {
+        margin: 30px 0 30px 0;
+    }
+
+    .breadcrumb-current, .breadcrumb-main, .slash {
+        color: $accent;
+    }
+}

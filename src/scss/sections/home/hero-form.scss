@@ -4,6 +4,7 @@
 
 .hero-form {
     display: flex;
+    flex-direction: column;
     width: 100%;
     justify-content: center;
 
@@ -72,6 +73,7 @@
 }
 
 .form-privacy-link {
+    text-align: center;
     font-family: $ff;
     font-weight: $fw-bold;
     color: $white;
