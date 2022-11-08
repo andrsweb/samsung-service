@@ -5,20 +5,20 @@
     cursor: pointer;
     border: 2px solid transparent;
     display: block;
-    height: 35px;
-    width: 35px;
+    height: 45px;
+    width: 45px;
     text-align: center;
     position: fixed;
-    left: 4%;
-    bottom: 10%; //18
+    right: 4%;
+    bottom: 10%;
     z-index: 999;
     transition: .3s ease-in-out;
     -webkit-animation: hoverWave linear 1s infinite;
     animation: hoverWave linear 1s infinite;
 
     @media all and (min-width: $sm) {
-        width: 45px;
-        height: 45px;
+        width: 65px;
+        height: 65px;
     }
 
     @media all and (min-width: $md) {
@@ -40,8 +40,20 @@
     position: relative;
 }
 
-.text-call {
+.text-call-wrapp {
     position: relative;
+    width: 45px;
+    height: 45px;
+
+    @media all and (min-width: $sm) {
+        width: 65px;
+        height: 65px;
+    }
+
+    @media all and (min-width: $md) {
+        height: 75px;
+        width: 75px;
+    }
 }
 
 .smartphone {
@@ -49,21 +61,19 @@
     height: 20px;
     display: block;
     position: absolute;
-    top: 10%; //25
-    left: 22%; //50
-    transform: translateX(-50%);
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
 
-    @media all and (min-width: $md) {
+    @media all and (min-width: $sm) {
         width: 30px;
         height: 30px;
-        left: 28%;
     }
 
-    @media all and (min-width: $xl) {
+
+    @media all and (min-width: $md) {
         width: 40px;
         height: 40px;
-        left: 50%;
-        top: 25%
     }
 }
 
