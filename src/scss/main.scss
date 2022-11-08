@@ -12,9 +12,11 @@
 
 // Header styles.
 @import 'header/header';
+@import 'header/header-form';
 
 // Footer styles.
 @import 'footer/footer';
+@import 'footer/phone-button';
 
 // Home page sections styles.
 @import 'sections/breadcrumbs';
@@ -53,12 +55,16 @@
 
 //contacts styles
 @import 'sections/contacts/contacts-main';
+@import 'sections/contacts/contacts-map';
 
 //repair default styles
 @import 'sections/repair/repair';
 @import 'sections/repair/repair-question';
 @import 'sections/repair/repair-work';
 @import 'sections/repair/repair-info';
+
+//privacy styles
+@import 'sections/privacy/privacy';
 
 
 

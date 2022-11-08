@@ -24,7 +24,8 @@
 
     .header-phone {
         color: $accent;
-        font-size: 30px;
+        font-size: 25px;
+        padding: 0;
 
         @media all and (min-width: $md) {
             font-size: 40px;

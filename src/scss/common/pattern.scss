@@ -11,7 +11,11 @@
 		font-size: 15px;
 		color: $accent;
 		text-align: center;
-		margin-bottom: 50px;
+		margin-bottom: 20px;
+
+		@media all and (min-width: $md) {
+			margin-bottom: 50px;
+		}
 
 		@media all and (min-width: $lg) {
 			font-size: 20px;
@@ -42,8 +46,12 @@
 	}
 
 	.pattern-allert {
-		padding: 50px 0;
+		padding: 20px 0;
 		background: rgb(197, 8, 8);
+
+		@media all and (min-width: $md) {
+			padding: 40px 0;
+		}
 	}
 
 	.pattern-information {
@@ -99,10 +107,10 @@
 			font-size: 12px;
 			text-align: center;
 			text-transform: uppercase;
+			margin: 20px 0;
 
 			@media all and (min-width: $md) {
 				font-size: 18px;
-				margin-bottom: 50px;
 			}
 
 			@media all and (min-width: $lg) {
@@ -147,15 +155,11 @@
 		.sidebar-phone-text {
 			font-size: 14px;
 			text-align: center;
-			margin-bottom: 100px;
+			margin-bottom: 50px;
 			color: $white;
 
 			@media all and (min-width: $m) {
 				font-size: 16px
-			}
-
-			@media all and (min-width: $md) {
-				margin-bottom: 50px;
 			}
 		}
 
@@ -175,6 +179,7 @@
 			width: 100%;
 			margin-bottom: 40px;
 			color: $white;
+			padding: 0;
 
 			@media all and (min-width: $md) {
 				font-size: 20px;
@@ -238,8 +243,12 @@
 	}
 
 	.pattern-items {
-		padding: 50px 0 ;
+		padding: 20px 0;
 		background: $plat;
+
+		@media all and (min-width: $md) {
+			padding: 50px 0;
+		}
 
 		.header-phone {
 			display: flex;

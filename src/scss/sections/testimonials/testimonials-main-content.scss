@@ -97,7 +97,7 @@
 		margin: 0;
 		border-radius: 10px;
 		box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3)
-		0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+					0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 	}
 
 	.testimonials-slides {
@@ -237,6 +237,7 @@
 		width: 100%;
 		margin-bottom: 40px;
 		color: $white;
+		padding: 0;
 
 		@media all and (min-width: $md) {
 			font-size: 20px;
@@ -244,10 +245,6 @@
 
 		@media all and (min-width: $xl) {
 			font-size: 30px;
-		}
-
-		img {
-			margin-right: 10px;
 		}
 	}
 

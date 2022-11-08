@@ -27,6 +27,7 @@
 	}
 
 	.header-ui {
+		padding: 10px 0;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -56,54 +57,35 @@
 			display: flex;
 			flex-wrap: wrap;
 			align-items: center;
+			justify-content: space-between;
 		}
 
 		&.opened {
-			padding: 100px 0 40px;
+			padding: 10px 0;
 			opacity: 1;
 			transition: opacity ease 1s;
 			overflow-y: auto;
 			position: fixed;
-			top: 68px;
+			top: 57px;
 			left: 0;
 			background: $white;
 			width: 100%;
-			height: calc( 100vh - 68px );
+			height: calc( 100vh - 57px );
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: space-between;
 			align-items: center;
 
-			.header-menu-text {
-				display: flex;
-				justify-content: center;
-				width: 100%;
-				margin-bottom: 20px;
-				text-align: center;
-			}
-
-			.header-button-wrapper {
-				width: 100%;
-				display: flex;
-				justify-content: center;
-				order: 2;
-
-				@media all and (min-width: $md) {
-					order: 1;
-				}
-			}
-
 			.header-menu {
 				width: 100%;
 				display: flex;
 				flex-direction: column;
-				order: 1;
 				align-items: center;
-				margin-bottom: 20px;
+				margin-bottom: 100px;
+				order: 1;
 
 				@media all and (min-width: $md) {
 					width: 100%;
-					order: 2;
 				}
 			}
 
@@ -122,73 +104,75 @@
 					margin: 0;
 				}
 			}
+			.header-button {
+				display: block;
+				order: 2;
+				margin: 0 auto;
+			}
 		}
 	}
 
 	&-logo {
 		display: flex;
+		flex-direction: column;
 		justify-content: space-between;
 		align-items: center;
 		cursor: pointer;
 		width: auto;
 		position: relative;
 		z-index: 10;
-
-		@media all and (min-width: $md) {
-			width: 100%;
-			justify-content: flex-start;
-		}
 	}
 
 	&-logo-md {
 		display: none;
+
 		@media all and (min-width: $md) {
 			display: flex;
+			flex-direction: column;
 			justify-content: flex-start;
-			width: 10%;
 			cursor: pointer;
+			width: auto;
+		}
+
+		span {
+			font-size: 11px;
+			text-align: center;
+
+			@media all and (min-width: $md) {
+				font-size: 14px;
+			}
+		}
+	}
+
+	.header-button {
+		display: none;
+
+		@media all and (min-width: $md) {
+			display: block;
 		}
 	}
 
 	&-menu-text {
+		padding: 5px;
 		display: none;
-		justify-content: flex-end;
-		align-items: center;
+		position: absolute;
+		bottom: -25px;
+		right: 50%;
+		transform: translateX( 50%);
 		font-family: $ff;
 		font-weight: $fw-bold;
-		font-size: 20px;
+		font-size: 14px;
 		color: $span;
+		white-space: nowrap;
 
 		@media all and (min-width: $md) {
-			display: flex;
-			width: 40%;
-			font-size: 12px;
-			justify-content: center;
-		}
-
-		@media all and (min-width: $lg) {
-			font-size: 15px;
-		}
-
-		@media all and (min-width: $xl) {
-			font-size: 20px;
-		}
-	}
-
-	&-button-wrapper {
-		display: none;
-		justify-content: flex-end;
-		align-items: center;
-
-		@media all and (min-width: $md) {
-			display: flex;
-			width: 30%;
+			display: block;
 		}
 	}
 
 	&-menu {
 		display: none;
-		margin-top: 10px;
+		margin-top: 25px;
 		justify-content: center;
 		width: 100%;
 
@@ -228,6 +212,7 @@
 	}
 
 	&-phone {
+		position: relative;
 		display: none;
 		align-items: center;
 		justify-content: flex-end;
@@ -236,20 +221,15 @@
 		font-size: 24px;
 		color: $accent;
 		padding-right: 20px;
+		width: 100%;
 
 		@media all and (min-width: $md) {
 			display: flex;
-			font-size: 12px;
-			width: 20%;
-			padding-right: 0;
-		}
-
-		@media all and (min-width: $lg) {
-			font-size: 19px;
-		}
-
-		@media all and (min-width: $xl) {
 			font-size: 24px;
+			padding-right: 0;
+			margin-right: 20px;
+			width: auto;
+			margin-left: auto;
 		}
 
 		img {
@@ -263,6 +243,18 @@
 			@media all and (min-width: $xl) {
 				max-width: 100%;
 			}
+		}
+	}
+	&-ui-wrapp {
+		width: 100%;
+		position: relative;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+
+		@media all and (min-width: $md) {
+			width: auto;
 		}
 	}
 }

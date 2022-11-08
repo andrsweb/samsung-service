@@ -1,23 +1,24 @@
-@@include( 'template-parts/header/header.html', { "title": 'Сроки оказания услуг' } )
+@@include( 'template-parts/header/header.html', { "title": 'Наши контакты' } )
 
 <main>
     @@include( 'template-parts/sections/contacts/contacts-main.html')
     @@loop( 'template-parts/sections/diagnostic/pattern.html', [
-	{ "class1": "contacts-items", "class2": "contacts-info",
-	"class3": "contacts-text", "class4": "contacts-img", "class5": "contacts-alert",
-	"class6": "contacts-information", "class7": "contacts-cols", "class8": "contacts-left",
-	"class9": "contacts-col-img", "class10": "contacts-col-right", "class11": "contacts-col-text",
-	"class11": "contacts-col-text", "class12": "contacts-col-text", "class13": "contacts-col-text", "style": 'style="display: flex;"',
+		{ "class1": "contacts-items", "class2": "contacts-info",
+		"class3": "contacts-text", "class4": "contacts-img", "class5": "contacts-alert",
+		"class6": "contacts-information", "class7": "contacts-cols", "class8": "contacts-left",
+		"class9": "contacts-col-img", "class10": "contacts-col-right", "class11": "contacts-col-text",
+		"class11": "contacts-col-text", "class12": "contacts-col-text", "class13": "contacts-col-text", "style": 'style="display: flex;"',
 
-	"h2": "Наши контакты", "h3": "Если неисправность невозможно устранить на выезде, мы предусмотрели возможность бесплатной доставки техники в сервисный центр. ",
+		"h2": "Наши контакты", "h3": "Если неисправность невозможно устранить на выезде, мы предусмотрели возможность бесплатной доставки техники в сервисный центр. ",
 
-	"src1": "img/contacts/bild.png", "src2": "img/diagnostic/info.png", "src3": "img/contacts/map.png",
-	"text": "",
-	"text1": "Мастера выезжают во все районы Москвы и ближайшего Подмосковья (30 км от МКАД)",
-	"text2": "",
-	"text3": "Ремонт техники SAMSUNG выполняется на дому у клиента или в нашем сервисном центре. Выезд мастера на дом и доставка в сервис выполняются бесплатно."}
-] )
-
+		"src1": "img/contacts/bild.png", "src2": "img/diagnostic/info.png", "src3": "img/contacts/map.png",
+		"text": "",
+		"text1": "Мастера выезжают во все районы Москвы и ближайшего Подмосковья (30 км от МКАД)",
+		"text2": "",
+		"text3": "Ремонт техники SAMSUNG выполняется на дому у клиента или в нашем сервисном центре. Выезд мастера на дом и доставка в сервис выполняются бесплатно."}
+	] )
+	@@include( 'template-parts/sections/contacts/contacts-map.html')
+</main>
 
 
 @@include( 'template-parts/footer/footer.html' )

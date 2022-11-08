@@ -1,0 +1,83 @@
+.contacts-map {
+    padding: 50px 0;
+    background: $plat;
+
+    h2 {
+        width: 100%;
+    }
+
+    &-items {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -20px;
+    }
+
+    &-item {
+        width: calc( 100% / 1 );
+        padding: 0 20px;
+        margin-bottom: 40px;
+
+        @media all and (min-width: $md) {
+            font-size: 14px;
+            width: ( calc( 100% / 2 ) );
+        }
+    }
+
+    &-inner {
+        background: $plat;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    &-name {
+        font-size: 12px;
+        text-align: center;
+        margin: 0 0 30px 0;
+
+        @media all and (min-width: $sm) {
+            font-size: 14px;
+        }
+
+        @media all and (min-width: $lg) {
+            font-size: 18px;
+        }
+    }
+
+    &-address {
+        font-size: 12px;
+        margin-bottom: 20px;
+        text-align: center;
+
+        @media all and (min-width: $lg) {
+            font-size: 18px;
+        }
+    }
+
+    &-frame {
+        max-width: 500px;
+        border: none;
+        border-radius: 20px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 10px 20px -30px, rgba(0, 0, 0, 0.3)
+					0px 10px 50px -20px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+
+        iframe {
+            max-height: 250px;
+            border: none;
+            border-radius: 20px;
+            max-width: 100%;
+
+            @media all and (min-width: $sm) {
+                max-height: 300px;
+            }
+
+            @media all and (min-width: $lg) {
+                font-size: 14px;
+            }
+        }
+    }
+}
