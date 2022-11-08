@@ -7,8 +7,16 @@
     }
 
     h3 {
-        font-size: 20px;
+        font-size: 15px;
         margin: 30px 0 30px 0;
+    }
+
+    h2 {
+        margin: 20px;
+        font-size: 15px;
+        @media all and (min-width: $md) {
+            font-size: 20px;
+        }
     }
 
     li {
