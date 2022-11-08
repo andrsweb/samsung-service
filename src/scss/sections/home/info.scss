@@ -1,5 +1,9 @@
 .info {
-	padding: 50px 0;
+	padding: 20px 0;
+
+	@media all and (min-width: $md) {
+		padding: 50px 0;
+	}
 
 	.container {
 		max-width: 1200px;
@@ -84,5 +88,25 @@
 			height: 10px;
 			background: $accent;
 		}
+	}
+
+	.phone-num-wrapper {
+		background: $accent;
+		border-radius: 10px;
+		padding: 10px;
+		border: 2px solid $plat;
+		margin: 30px 0;
+		text-align: center;
+		font-size: 15px;
+		color: $white;
+
+		@media all and (min-width: $md) {
+			display: none;
+		}
+	}
+
+	.phone-num {
+		color: $white;
+		font-size: 25px;
 	}
 }
