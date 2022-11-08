@@ -13,7 +13,7 @@ const formOnClick = () => {
 	const formWrapper = document.querySelector( '.form-wrapper' )
 	const formButton  = document.querySelectorAll( '.open-form' )
 	const closeButton = document.querySelector( '.close-button' )
-	setTargetElement( document.querySelector( '#body-lock' ) )
+	setTargetElement( document.querySelector( '#form-lock' ) )
 
 	if ( ! formWrapper && ! formButton ) return
 
