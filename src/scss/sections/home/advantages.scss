@@ -66,10 +66,13 @@
 
     &-item-text {
         font-size: 12px;
-        min-height: 100px;
 
         @media all and (min-width: $m) {
             font-size: 15px;
+        }
+
+        @media all and (min-width: $lg) {
+            min-height: 90px;
         }
 
         @media all and (min-width: $xl) {

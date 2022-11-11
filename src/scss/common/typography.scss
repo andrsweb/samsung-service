@@ -53,6 +53,7 @@ a {
 	text-decoration: none;
 	display: inline-block;
 	transition: opacity ease-out $tr;
+	color: $accent;
 
 	&:hover {
 		opacity: $op;
